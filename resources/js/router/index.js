@@ -29,7 +29,7 @@ import Register from "../views/auth/register.vue";
 import Login from "../views/auth/login.vue";
 import ForgotPass from '../views/auth/forgetPass.vue';
 import Verify from '../views/auth/verify.vue';
-import Landing from '../views/landing/main.vue';
+import Landing from '../views/landing/main2.vue';
 import { useAuthStore } from "../stores/auth";
 
 const routes = [
