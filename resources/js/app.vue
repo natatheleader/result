@@ -1,30 +1,5 @@
 <template>
-  <!-- <Modal :show="!showInstallModal" @hidden="showInstallModal != false">
-    <ModalBody>
-      <div class="w-full flex jutify-between items-center">
-      <div class="p-5 text-center">
-        <img src="./assets/images/ewenetDark.png" class="w-auto h-16 text-danger mx-auto mt-3 dark:hidden" />
-        <img src="./assets/images/ewenetWhite.png" class="w-auto h-16 text-danger mx-auto mt-3 hidden dark:block" />
-      </div>
-      <div>
-        <div class="text-xl mt-5">{{ $t('install-prompt') }}</div>
-      </div>
-    </div>
-      <div class="px-5 pb-8 text-center gap-2 flex">
-        <button
-          type="button"
-          @click="install"
-          class="btn btn-outline-secondary w-24 mr-1"
-        >
-          {{ $t('install')}}
-        </button>
-        <button type="button" class="btn btn-danger w-24" @click="cancelInstall()">
-          {{ $t('cancel')}}
-        </button>
-      </div>
-    </ModalBody>
-  </Modal> -->
-  <div
+  <!-- <div
     v-if="showMenu"
     class="h-screen w-screen fixed top-0 right-0 md:w-1/5 z-[9999] bg-gray-200 dark:bg-gray-800 dark:bg-opacity-50 bg-opacity-50 backdrop-blur-md dark:backdrop-blur-sm"
   >
@@ -53,8 +28,8 @@
         </div>
       </div>
     </div>
-  </div>
-  <div
+  </div> -->
+  <!-- <div
     :class="[showMenu ? 'fixed top-5 right-0 z-[9999]' : 'fixed bottom-10 right-2']"
   
     class="bg-white z-[9999] shadow-lg fixed p-2 rounded-md"
@@ -71,19 +46,19 @@
       src="./assets/images/closebutton.png"
       class="duration-75 hover:cursor-pointer z-[9999] w-[30px] h-auto"
     />
-  </div>
+  </div> -->
 
   <router-view />
 </template>
 
 <script setup>
 import { ref, computed, onMounted } from "vue";
-import DarkModeSwitcher from "@/components/dark-mode-switcher/Main.vue";
-import MainColorSwitcher from "@/components/main-color-switcher/Main.vue";
-import { useDarkModeStore } from "@/stores/dark-mode";
-import { useColorSchemeStore } from "@/stores/color-scheme";
-import dom from "@left4code/tw-starter/dist/js/dom";
-import backendApi from './networkServices/api.js'
+// import DarkModeSwitcher from "@/components/dark-mode-switcher/Main.vue";
+// import MainColorSwitcher from "@/components/main-color-switcher/Main.vue";
+// import { useDarkModeStore } from "@/stores/dark-mode";
+// import { useColorSchemeStore } from "@/stores/color-scheme";
+// import dom from "@left4code/tw-starter/dist/js/dom";
+// import backendApi from './networkServices/api.js'
 // import { App as CapacitorApp } from '@capacitor/app';
 
 // CapacitorApp.addListener('backButton', ({canGoBack}) => {
@@ -95,39 +70,39 @@ import backendApi from './networkServices/api.js'
 // });
 
 
-const showInstallModal = ref(false)
-const darkModeStore = useDarkModeStore();
-const darkMode = computed(() => darkModeStore.darkMode);
-const colorSchemeStore = useColorSchemeStore();
-const colorScheme = computed(() => colorSchemeStore.colorScheme);
+// const showInstallModal = ref(false)
+// const darkModeStore = useDarkModeStore();
+// const darkMode = computed(() => darkModeStore.darkMode);
+// const colorSchemeStore = useColorSchemeStore();
+// const colorScheme = computed(() => colorSchemeStore.colorScheme);
 
 onMounted(() => {
-  switchColorScheme("theme-1");
+  // switchColorScheme("theme-1");
 });
 
-const setColorSchemeClass = () => {
-  dom("html")
-    .attr("class", colorScheme.value)
-    .addClass(darkMode.value ? "dark" : "");
-};
+// const setColorSchemeClass = () => {
+//   dom("html")
+//     .attr("class", colorScheme.value)
+//     .addClass(darkMode.value ? "dark" : "");
+// };
 
-const switchColorScheme = (colorScheme) => {
-  colorSchemeStore.setColorScheme(colorScheme);
-  setColorSchemeClass();
-};
-const showMenu = ref(false);
-const toggleSettings = () => {
-  showMenu.value = !showMenu.value;
-};
-const defferedPrompt = ref(null);
-const install = () => {
-  defferedPrompt.value.prompt();
-}
+// const switchColorScheme = (colorScheme) => {
+//   colorSchemeStore.setColorScheme(colorScheme);
+//   setColorSchemeClass();
+// };
+// const showMenu = ref(false);
+// const toggleSettings = () => {
+//   showMenu.value = !showMenu.value;
+// };
+// const defferedPrompt = ref(null);
+// const install = () => {
+//   defferedPrompt.value.prompt();
+// }
 
-const cancelInstall = () =>{
-  defferedPrompt.value = null;
-  showInstallModal.value = false;
-}
+// const cancelInstall = () =>{
+//   defferedPrompt.value = null;
+//   showInstallModal.value = false;
+// }
 
 onMounted(async () => {
   window.addEventListener("beforeinstallprompt", e => {
