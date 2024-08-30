@@ -241,25 +241,25 @@ const first_name = ref('')
 const last_name = ref('')
 
 onMounted(() => {
-  const userData = useAuthStore();
+  // const userData = useAuthStore();
   // if (userData.getPermission.includes(permission)) {
   //     return true;
   // }
   // console.log(authStore.user_data.profile.profile_pic)
 
-  if (authStore.user_data.profile || authStore.user_data.profile !== null) {
-    profileImg.value = "http://maledamirchaye.com/storage/" + authStore.user_data.profile.profile_pic
-    first_name.value = authStore.user_data.profile.first_name
-    last_name.value = authStore.user_data.profile.last_name
-  }
+  // if (authStore.user_data.profile || authStore.user_data.profile !== null) {
+  //   profileImg.value = "http://maledamirchaye.com/storage/" + authStore.user_data.profile.profile_pic
+  //   first_name.value = authStore.user_data.profile.first_name
+  //   last_name.value = authStore.user_data.profile.last_name
+  // }
 
-  if (authStore.user_data.registered == null || authStore.user_data.registered.profile_id == null) {
-    myrouter.push({ name: "myTask" });
-  }
+  // if (authStore.user_data.registered == null || authStore.user_data.registered.profile_id == null) {
+  //   myrouter.push({ name: "myTask" });
+  // }
 
-  if (!authStore.user_data.profile || authStore.user_data.profile == null) {
-    myrouter.push({ name: "addProfile" });
-  }
+  // if (!authStore.user_data.profile || authStore.user_data.profile == null) {
+  //   myrouter.push({ name: "addProfile" });
+  // }
   // const url = authStore.profile.profile_pic;
 });
 

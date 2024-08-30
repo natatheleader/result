@@ -150,7 +150,7 @@
                   class="intro-x text-slate-500 block mt-2 text-xs sm:text-sm"
                   >What is a Strong Password?
                 </a>
-                <input
+                <!-- <input
                   type="text"
                   v-model.trim="validate.reff.$model"
                   class="intro-x login__input form-control py-3 px-4 block mt-4"
@@ -165,7 +165,7 @@
                   >
                     {{ error.$message }}
                   </div>
-                </template>
+                </template> -->
               </div>
               <div
                 class="mb-2 intro-x flex items-center text-slate-600 dark:text-slate-500 mt-4 text-xs sm:text-sm"
@@ -493,7 +493,6 @@ const formData = reactive({
   email: "",
   password: "",
   c_password: "",
-  reff: "",
 });
 
 const agreement = ref(false);
@@ -513,9 +512,6 @@ const rules = {
     minLength: minLength(8),
   },
   c_password: {
-    required,
-  },
-  reff: {
     required,
   },
 };
@@ -576,7 +572,6 @@ const signup = async () => {
         name: formData.name,
         email: formData.email,
         password: formData.password,
-        reff: formData.reff,
         c_password: formData.c_password,
       })
       .then((response) => {
@@ -839,10 +834,10 @@ const inputOptions = ref({
 onMounted(() => {
   dom("body").removeClass("main").removeClass("error-page").addClass("login");
 
-  const urlParams = new URLSearchParams(window.location.search);
-  const referralCode = urlParams.get('r_c');
+  // const urlParams = new URLSearchParams(window.location.search);
+  // const referralCode = urlParams.get('r_c');
 
-  const referralField = document.getElementById("r_c");
-  referralField.value = referralCode;
+  // const referralField = document.getElementById("r_c");
+  // referralField.value = referralCode;
 });
 </script>

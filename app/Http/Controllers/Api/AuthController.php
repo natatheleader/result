@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Api;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
-use App\Models\Referral;
 use App\Models\Transaction;
 use Illuminate\Support\Str;
 use Carbon\Carbon; 
@@ -43,23 +42,10 @@ class AuthController extends BaseController
         }
 
         $user = Auth::user();
-        $user->permission = $user->getPermissionsViaRoles();
-
-        if ($user->profile != null) {
-            $reg = Transaction::where('profile_id', $user->profile->id)->latest()->first();
-            $user->registered = $reg;
-        } else {
-            // $user->profile->first_name = 'null';
-            $user->registered = null;
-        }
-
-        // dd($user->profile);
 
         return response()->json([
             'status' => 'success',
             'user' => $user,
-            'profile' => $user->profile,
-            'permissions' => $user->getPermissionsViaRoles(),
             'authorisation' => [
                 'token' => $token,
                 'type' => 'bearer',
@@ -74,7 +60,6 @@ class AuthController extends BaseController
             'email'         => 'required|string|email|max:255|unique:users',
             'password'      => 'required|string|min:6',
             'c_password'    => 'required|string|min:6|same:password',
-            'reff'          => 'required'
         ]);
 
         if($validator->fails()){
@@ -83,51 +68,16 @@ class AuthController extends BaseController
 
         $input = $request->all();
 
-        if (isset($input['reff'])) {
-            $code = User::where('r_code', $input['reff'])->first();
-            if ($code == null) {
-                return $this->sendError('Validation Error.', 'The Refferal Code You Entered Doesn\'t exist'); 
-            }
-        }
-
-        $first_part_of_string = substr($input['name'],0,2);
-        
-        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        $charactersLength = strlen($characters);
-        $randomString = '';
-        for ($i = 0; $i < 7; $i++) {
-            $randomString .= $characters[random_int(0, $charactersLength - 1)];
-        }
-
-        $input['referral_code'] = $first_part_of_string . "_" . $randomString;
-        
         $user = User::create([
             'name' => $input['name'],
             'email' => $input['email'],
             'password' => Hash::make($request->password),
-            'reff' => $input['reff'],
-            'is_active' => 0,
-            'r_code' => $input['referral_code'],
+            'is_active' => 1,
         ]);
 
         $token = Auth::login($user);
 
-        // if ($user->type == 1) {
-        $user->assignRole('customer');
-        // } else if ($user->type == 2) {
-        //     $user->assignRole('sales');
-        // }
-
-        if (isset($input['reff'])) {
-            $code = User::where('r_code', $input['reff'])->first();
-
-            $reff = Referral::create([
-                'user_id'           => $user->id,
-                'reffered_by_id'    => $code->id,
-            ]);
-        }
-
-        date_default_timezone_set('Africa/Addis_Ababa');
+        date_default_timezone_set('Asia/Dubai');
 
         //send email for activation
         $now = date("Y-m-d H:i:s");
@@ -139,7 +89,7 @@ class AuthController extends BaseController
         try {
             Mail::send('emails.activateAccount', ['token' => $verificationToken], function($message) use($request){
                 $message->to($request->email);
-                $message->subject('Welcome to Maleda Mirchaye! Please activate your Account.');
+                $message->subject('Welcome to Results! Please activate your Account.');
             });
         } catch (Exeption $e)
         {}

@@ -69,7 +69,7 @@
                   :key="subMenuKey"
                 >
                   <a
-                  v-if="checkPermission(subMenu.permission)"
+                  
                     href="javascript:;"
                     class="menu"
                     :class="{ 'menu--active': subMenu.active }"
@@ -163,10 +163,10 @@ onMounted(() => {
   formattedMenu.value = $h.toRaw(mobileMenu.value);
 });
 
-const checkPermission = (permission) => {
-  const userData = useAuthStore();
-  if (userData.getPermission.includes(permission)) {
-      return true;
-  }
-};
+// const checkPermission = (permission) => {
+//   const userData = useAuthStore();
+//   if (userData.getPermission.includes(permission)) {
+//       return true;
+//   }
+// };
 </script>

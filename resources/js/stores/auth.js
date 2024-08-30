@@ -7,7 +7,7 @@ export const useAuthStore = defineStore("auth", {
     user_data : null,
     refresh_token:null,
     status:false,
-    profile:null,
+    // profile:null,
     register:null, 
   }),
   getters: {
@@ -23,12 +23,12 @@ export const useAuthStore = defineStore("auth", {
     getStatus(state) {
         return state.status
     },
-    getProfile(state) {
-      return state.profile
-    },
-    getPermission(state) {
-      return state.user_data.permission.map(d=>d.name)
-    },
+    // getProfile(state) {
+    //   return state.profile
+    // },
+    // getPermission(state) {
+    //   return state.user_data.permission.map(d=>d.name)
+    // },
     getRegistration(state) {
       return state.register
     }
@@ -43,9 +43,9 @@ export const useAuthStore = defineStore("auth", {
     setRefreshToken(token){
         this.refresh_token = token
     },
-    setProfile(data){
-      this.profile = data
-    },
+    // setProfile(data){
+    //   this.profile = data
+    // },
     logout(){
         this.access_token = null 
         this.status = false

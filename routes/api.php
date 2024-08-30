@@ -15,7 +15,7 @@ use App\Http\Controllers\Api\WithdrawalController;
 use App\Http\Controllers\Api\RefferalController;
 use App\Http\Controllers\Api\ComplainController;
 use App\Http\Controllers\Api\UsersController;
-use App\Http\Controllers\Api\NotificationController;
+use App\Http\Controllers\Api\BannerController;
 
 use App\Http\Controllers\Api\AuthController;
 
@@ -45,6 +45,15 @@ Route::controller(AuthController::class)->group(function () {
     // Route::post('v1/auth/RegisterVerifyOTP', 'verifyOTPRegister');
     // Route::post('v1/auth/resendOTP', 'resendOTP');
 });
+
+Route::controller(BannerController::class)->group(function () {
+    Route::get('v1/banner', 'index');
+    Route::post('v1/banner', 'store');
+    Route::get('v1/banner/{id}', 'show');
+    Route::post('v1/banner/u/{id}', 'update');
+    Route::delete('v1/banner/{id}', 'destroy');
+});
+
 
 Route::middleware('auth:api', 'isVerified')->group( function () {
     Route::resource('v1/knowledgebase', KnowledgebaseController::class);

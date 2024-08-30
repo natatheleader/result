@@ -25,14 +25,12 @@ class User extends Authenticatable implements JWTSubject
         'email',
         'password',
         'is_active',
-        'r_code',
-        'reff'
     ];
 
     public function getActivitylogOptions(): LogOptions
     {
         return LogOptions::defaults()
-        ->logOnly(['name', 'email', 'password', 'is_active', 'r_code', 'reff']);
+        ->logOnly(['name', 'email', 'password', 'is_active']);
         // Chain fluent methods for configuration options
     }
 
@@ -73,16 +71,6 @@ class User extends Authenticatable implements JWTSubject
     public function getJWTCustomClaims()
     {
         return [];
-    }
-
-    /**
-     * Get all of the referal for the User
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
-     */
-    public function referal()
-    {
-        return $this->hasMany(Referral::class, 'user_id', 'reffered_by_id');
     }
 
     /**

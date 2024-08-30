@@ -53,7 +53,6 @@
                     :key="subMenuKey"
                   >
                     <SideMenuTooltip
-                      v-if="checkPermission(subMenu.permission)"
                       tag="a"
                       :content="subMenu.title"
                       :href="
@@ -174,10 +173,10 @@ onMounted(() => {
   formattedMenu.value = $h.toRaw(sideMenu.value);
 });
 
-const checkPermission = (permission) => {
-  const userData = useAuthStore();
-  if (userData.getPermission.includes(permission)) {
-      return true;
-  }
-};
+// const checkPermission = (permission) => {
+//   const userData = useAuthStore();
+//   if (userData.getPermission.includes(permission)) {
+//       return true;
+//   }
+// };
 </script>
