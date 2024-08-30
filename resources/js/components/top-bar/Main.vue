@@ -11,7 +11,7 @@
           class="logo__image w-6"
           src="@/assets/images/logo.png"
         />
-        <span class="logo__text text-white text-lg ml-3">Maleda</span>
+        <span class="logo__text text-white text-lg ml-3">Result</span>
       </a>
       <!-- END: Logo -->
       <!-- BEGIN: Breadcrumb -->

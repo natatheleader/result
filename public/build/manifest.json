@@ -5,36 +5,21 @@
     "src": "resources/css/app.css"
   },
   "resources/js/app.css": {
-    "file": "assets/app-854577c3.css",
+    "file": "assets/app-0d232cc0.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
     "assets": [
-      "assets/setting-398fefbc.png",
-      "assets/closebutton-c2fb4b28.png",
       "assets/logo-e3655fc3.png",
       "assets/logo-a8b7d868.svg",
-      "assets/illustration-73ed9678.svg",
-      "assets/dash2-c6ab7509.jpg",
-      "assets/icon-star-c8404038.svg",
-      "assets/author-01-f5e5fa50.jpg",
-      "assets/author-02-c635261b.jpg",
-      "assets/author-03-f355450a.jpg"
+      "assets/illustration-73ed9678.svg"
     ],
     "css": [
-      "assets/app-854577c3.css"
+      "assets/app-0d232cc0.css"
     ],
-    "file": "assets/app-729fbe8a.js",
+    "file": "assets/app-5e266b3f.js",
     "isEntry": true,
     "src": "resources/js/app.js"
-  },
-  "resources/js/assets/images/closebutton.png": {
-    "file": "assets/closebutton-c2fb4b28.png",
-    "src": "resources/js/assets/images/closebutton.png"
-  },
-  "resources/js/assets/images/dash2.jpg": {
-    "file": "assets/dash2-c6ab7509.jpg",
-    "src": "resources/js/assets/images/dash2.jpg"
   },
   "resources/js/assets/images/illustration.svg": {
     "file": "assets/illustration-73ed9678.svg",
@@ -47,25 +32,5 @@
   "resources/js/assets/images/logo.svg": {
     "file": "assets/logo-a8b7d868.svg",
     "src": "resources/js/assets/images/logo.svg"
-  },
-  "resources/js/assets/images/setting.png": {
-    "file": "assets/setting-398fefbc.png",
-    "src": "resources/js/assets/images/setting.png"
-  },
-  "resources/js/assets/images/testimonials/author-01.jpg": {
-    "file": "assets/author-01-f5e5fa50.jpg",
-    "src": "resources/js/assets/images/testimonials/author-01.jpg"
-  },
-  "resources/js/assets/images/testimonials/author-02.jpg": {
-    "file": "assets/author-02-c635261b.jpg",
-    "src": "resources/js/assets/images/testimonials/author-02.jpg"
-  },
-  "resources/js/assets/images/testimonials/author-03.jpg": {
-    "file": "assets/author-03-f355450a.jpg",
-    "src": "resources/js/assets/images/testimonials/author-03.jpg"
-  },
-  "resources/js/assets/images/testimonials/icon-star.svg": {
-    "file": "assets/icon-star-c8404038.svg",
-    "src": "resources/js/assets/images/testimonials/icon-star.svg"
   }
 }
