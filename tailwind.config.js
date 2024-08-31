@@ -51,7 +51,6 @@ module.exports = {
           gray: colors.gray,
           slate: colors.slate,
         }),
-        pinkk: '#9A2BBB',
         primary: withOpacityValue("--color-primary"),
         secondary: withOpacityValue("--color-secondary"),
         success: withOpacityValue("--color-success"),

@@ -1,5 +1,5 @@
 html {
-    @apply bg-primary;
+    @apply bg-purple-500;
     &.dark {
         @apply bg-darkmode-800;
         body {
