@@ -1,11 +1,10 @@
 <template>
   <div>
     <!-- ========== HEADER ========== -->
-  <header class="flex flex-wrap  md:justify-start md:flex-nowrap z-50 w-full border-b border-gray-200 dark:bg-neutral-800 dark:border-neutral-700">
+  <header class="sticky top-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full border-b border-gray-200 bg-pink-400 dark:border-neutral-700">
     <nav class="relative max-w-[85rem] w-full mx-auto md:flex md:items-center md:justify-between md:gap-3 py-2 px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center gap-x-1">
-        <a class="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80 text-white" href="#" aria-label="Brand">Result</a>
-
+        <a class="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80 text-white" href="#" aria-label="Brand"><img src="../../assets/images/logo.png" alt="logo" class="fill-current h-12 w-12 mr-2" width="80" height="80"><span>I Serena</span></a>
         <!-- Collapse Button -->
         <button type="button" class="hs-collapse-toggle md:hidden relative size-9 flex justify-center items-center font-medium text-[12px] rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" id="hs-header-base-collapse"  aria-expanded="false" aria-controls="hs-header-base" aria-label="Toggle navigation"  data-hs-collapse="#hs-header-base" >
           <svg class="hs-collapse-open:hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
@@ -23,7 +22,7 @@
               <div class="flex flex-col md:flex-row md:justify-end md:items-center gap-0.5 md:gap-1">
                 <a class="p-2 flex items-center text-sm bg-gray-100 text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 bg-neutral-700 text-neutral-200 hover:bg-neutral-700 focus:bg-neutral-700" href="#" aria-current="page">
                   <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-                  Home
+                  About
                 </a>
 
                 <!-- Dropdown -->
@@ -77,38 +76,112 @@
 
                 <a class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 text-neutral-200 hover:bg-neutral-700 focus:bg-neutral-700" href="#">
                   <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                  About
+                  Tips For Girls and Parents
                 </a>
 
                 <a class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 text-neutral-200 hover:bg-neutral-700 focus:bg-neutral-700" href="#">
                   <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
-                  Team
+                  Tips for Woman
                 </a>
 
                 <a class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 text-neutral-200 hover:bg-neutral-700 focus:bg-neutral-700" href="#">
                   <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
-                  Blog
+                  Menustral Cicle calculator
                 </a>
 
                 <a class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 text-neutral-200 hover:bg-neutral-700 focus:bg-neutral-700" href="#">
                   <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
-                  Feature
+                  Our Products
                 </a>
 
-                <a class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 text-neutral-200 hover:bg-neutral-700 focus:bg-neutral-700" href="#">
-                  <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
-                  Services
-                </a>
+                
 
-                <a class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 text-neutral-200 hover:bg-neutral-700 focus:bg-neutral-700" href="#">
-                  <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
-                  FAQ
-                </a>
+                <div class="hs-dropdown [--placement:top-left] relative inline-flex">
+                  <button id="hs-footer-language-dropdown" type="button" class="hs-dropdown-toggle py-2 px-3 inline-flex items-center gap-x-2 text-sm rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                    <svg class="size-3 rounded-full" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us1" viewBox="0 0 512 512">
+                      <g fill-rule="evenodd">
+                        <g stroke-width="1pt">
+                          <path fill="#bd3d44" d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/>
+                          <path fill="#fff" d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/>
+                        </g>
+                        <path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)"/>
+                        <path fill="#fff" d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z" transform="scale(3.9385)"/>
+                      </g>
+                    </svg>
+                    English (US)
+                    <svg class="hs-dropdown-open:rotate-180 shrink-0 size-4 text-gray-500 text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                  </button>
 
-                <a class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 text-neutral-200 hover:bg-neutral-700 focus:bg-neutral-700" href="#">
-                  <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
-                  Contact
-                </a>
+                  <div class="hs-dropdown-menu w-40 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden z-10 bg-white shadow-md rounded-lg p-2 bg-neutral-800 border border-neutral-700 divide-neutral-700" role="menu" aria-orientation="vertical" aria-labelledby="hs-footer-language-dropdown">
+                    <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 text-neutral-400 hover:bg-neutral-700 hover:text-neutral-300 focus:bg-neutral-700 focus:text-neutral-300" href="#">
+                      <svg class="size-3.5 rounded-full" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512">
+                        <g fill-rule="evenodd">
+                          <g stroke-width="1pt">
+                            <path fill="#bd3d44" d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/>
+                            <path fill="#fff" d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/>
+                          </g>
+                          <path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)"/>
+                          <path fill="#fff" d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z" transform="scale(3.9385)"/>
+                        </g>
+                      </svg>
+                      English (US)
+                    </a>
+                    <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 text-neutral-400 hover:bg-neutral-700 hover:text-neutral-300 focus:bg-neutral-700 focus:text-neutral-300" href="#">
+                      <svg class="size-3.5 rounded-full" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-arab" width="32" height="32" viewBox="0 0 32 32">
+                        <path d="M5,4h6V28H5c-2.208,0-4-1.792-4-4V8c0-2.208,1.792-4,4-4Z" fill="#ea3323"></path>
+                        <path d="M10,20v8H27c2.209,0,4-1.791,4-4v-4H10Z"></path>
+                        <path fill="#fff" d="M10 11H31V21H10z"></path>
+                        <path d="M27,4H10V12H31v-4c0-2.209-1.791-4-4-4Z" fill="#317234"></path>
+                        <path d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z" opacity=".15"></path>
+                        <path d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z" fill="#fff" opacity=".2"></path>
+                      </svg>
+                      عربي
+                    </a>
+                    <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 text-neutral-400 hover:bg-neutral-700 hover:text-neutral-300 focus:bg-neutral-700 focus:text-neutral-300" href="#">
+                      <svg class="size-3 rounded-full" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512">
+                        <path fill="#ffce00" d="M0 341.3h512V512H0z"/>
+                        <path d="M0 0h512v170.7H0z"/>
+                        <path fill="#d00" d="M0 170.7h512v170.6H0z"/>
+                      </svg>
+                      Deutsch
+                    </a>
+                    <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 text-neutral-400 hover:bg-neutral-700 hover:text-neutral-300 focus:bg-neutral-700 focus:text-neutral-300" href="#">
+                      <svg class="size-3 rounded-full" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-dk" viewBox="0 0 512 512">
+                        <path fill="#c8102e" d="M0 0h512.1v512H0z"/>
+                        <path fill="#fff" d="M144 0h73.1v512H144z"/>
+                        <path fill="#fff" d="M0 219.4h512.1v73.2H0z"/>
+                      </svg>
+                      Dansk
+                    </a>
+                    <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 text-neutral-400 hover:bg-neutral-700 hover:text-neutral-300 focus:bg-neutral-700 focus:text-neutral-300" href="#">
+                      <svg class="size-3 rounded-full" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-it" viewBox="0 0 512 512">
+                        <g fill-rule="evenodd" stroke-width="1pt">
+                          <path fill="#fff" d="M0 0h512v512H0z"/>
+                          <path fill="#009246" d="M0 0h170.7v512H0z"/>
+                          <path fill="#ce2b37" d="M341.3 0H512v512H341.3z"/>
+                        </g>
+                      </svg>
+                      Italiano
+                    </a>
+                    <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 text-neutral-400 hover:bg-neutral-700 hover:text-neutral-300 focus:bg-neutral-700 focus:text-neutral-300" href="#">
+                      <svg class="size-3 rounded-full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn" viewBox="0 0 512 512">
+                        <defs>
+                          <path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z"/>
+                        </defs>
+                        <path fill="#de2910" d="M0 0h512v512H0z"/>
+                        <use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)" xlink:href="#a"/>
+                        <use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)" xlink:href="#a"/>
+                        <use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)" xlink:href="#a"/>
+                        <use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)" xlink:href="#a"/>
+                        <use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)" xlink:href="#a"/>
+                      </svg>
+                      中文 (繁體)
+                    </a>
+                  </div>
+                </div>
+
+                <input type="search" class="bg-purple-white shadow rounded-3xl border-0 p-3" placeholder="Search by name...">
+                
               </div>
             </div>
 
@@ -135,15 +208,15 @@
   <!-- ========== END HEADER ========== -->
 
   <!-- Slider -->
-  <div class="px-4 lg:px-6 lg:px-8 py-10">
+  <div class="px-1 my-2 py-10">
     <div data-hs-carousel='{
         "loadingClasses": "opacity-0"
       }' class="relative">
-      <div class="hs-carousel relative overflow-hidden w-full h-[30rem] md:h-[calc(100vh-106px)]  bg-gray-100 rounded-2xl dark:bg-neutral-800">
+      <div class="hs-carousel relative overflow-hidden w-full h-[25rem] bg-gray-100 rounded-2xl dark:bg-neutral-800">
         <div class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
           <!-- Item -->
           <div class="hs-carousel-slide">
-            <div class="h-[30rem] md:h-[calc(100vh-106px)]  flex flex-col bg-[url('https://images.unsplash.com/flagged/photo-1572644973628-e9be84915d59?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat">
+            <div class="h-[25rem]  flex flex-col bg-[url('https://images.unsplash.com/flagged/photo-1572644973628-e9be84915d59?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat">
               <div class="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
                 <span class="block text-white">Banner 1: Lalibela</span>
                 <span class="block text-white text-xl md:text-3xl">Rock-hewn churches in Ethiopia. A UNESCO World Heritage Site.</span>
@@ -159,7 +232,7 @@
 
           <!-- Item -->
           <div class="hs-carousel-slide">
-            <div class="h-[30rem] md:h-[calc(100vh-106px)]  flex flex-col bg-[url('https://images.unsplash.com/photo-1516533075015-a3838414c3ca?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat">
+            <div class="h-[25rem] flex flex-col bg-[url('https://images.unsplash.com/photo-1516533075015-a3838414c3ca?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat">
               <div class="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
                 <span class="block text-white">Banner 2: Afar Dalol</span>
                 <span class="block text-white text-xl md:text-3xl">A remote, otherworldly volcanic landscape in Ethiopia.</span>
@@ -217,13 +290,33 @@
   <!-- Team -->
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     <!-- Title -->
-    <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-      <h2 class="text-2xl font-bold md:text-4xl md:leading-tight text-white">Check Our Products</h2>
+    <div class="intro-x flex items-center h-10 text-white">
+      <h2 class="text-3xl font-medium truncate mr-auto">
+        Important Notes
+      </h2>
+      <button
+        data-carousel="important-notes"
+        data-target="prev"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="prevImportantNotes"
+      >
+        <ChevronLeftIcon class="w-4 h-4" />
+      </button>
+      <button
+        data-carousel="important-notes"
+        data-target="next"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="nextImportantNotes"
+      >
+        <ChevronRightIcon class="w-4 h-4" />
+      </button>
+
+      See More >
     </div>
     <!-- End Title -->
 
     <!-- Grid -->
-    <div class="overflow-x-auto whitespace-nowrap">
+    <div class="overflow-hidden whitespace-nowrap">
       <div class="inline-block w-96 h-100 mx-10">
         <iframe class="rounded-xl mx-auto" width="420" height="315"
           src="https://www.youtube.com/embed/2xW9mTStyhM">
@@ -233,14 +326,14 @@
           Your browser does not support the video tag.
         </video> -->
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <!-- <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
             David Forren
           </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+          <p class="text-gray-600 text-base text-white">
             Founder / CEO
           </p>
-        </div> -->
+        </div>
       </div>
       <!-- End Col -->
 
@@ -249,14 +342,14 @@
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <!-- <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Amil Evara
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
           </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            UI/UX Designer
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
           </p>
-        </div> -->
+        </div>
       </div>
       <!-- End Col -->
 
@@ -265,14 +358,14 @@
           src="https://www.youtube.com/embed/haMue6QUhlQ">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <!-- <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Ebele Egbuna
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
           </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            Support Consultant
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
           </p>
-        </div> -->
+        </div>
       </div>
       <!-- End Col -->
     </div>
@@ -283,8 +376,28 @@
   <!-- Team -->
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     <!-- Title -->
-    <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-      <h2 class="text-2xl font-bold md:text-4xl md:leading-tight text-white">Check out More</h2>
+    <div class="intro-x flex items-center h-10 text-white">
+      <h2 class="text-3xl font-medium truncate mr-auto">
+        Important Notes
+      </h2>
+      <button
+        data-carousel="important-notes"
+        data-target="prev"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="prevImportantNotes"
+      >
+        <ChevronLeftIcon class="w-4 h-4" />
+      </button>
+      <button
+        data-carousel="important-notes"
+        data-target="next"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="nextImportantNotes"
+      >
+        <ChevronRightIcon class="w-4 h-4" />
+      </button>
+
+      See More >
     </div>
     <!-- End Title -->
 
@@ -294,15 +407,14 @@
         <iframe class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
-        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <!-- <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Amil Evara
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
           </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            UI/UX Designer
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
           </p>
-        </div> -->
+        </div>
       </div>
       <!-- End Col -->
 
@@ -311,14 +423,14 @@
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <!-- <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Amil Evara
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
           </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            UI/UX Designer
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
           </p>
-        </div> -->
+        </div>
       </div>
       <!-- End Col -->
 
@@ -327,14 +439,14 @@
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <!-- <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Amil Evara
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
           </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            UI/UX Designer
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
           </p>
-        </div> -->
+        </div>
       </div>
       <!-- End Col -->
 
@@ -343,14 +455,14 @@
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <!-- <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Amil Evara
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
           </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            UI/UX Designer
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
           </p>
-        </div> -->
+        </div>
       </div>
       <!-- End Col -->
 
@@ -359,14 +471,14 @@
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <!-- <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Amil Evara
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
           </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            UI/UX Designer
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
           </p>
-        </div> -->
+        </div>
       </div>
       <!-- End Col -->
 
@@ -455,91 +567,1004 @@
   <!-- Team -->
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     <!-- Title -->
-    <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-      <h2 class="text-2xl font-bold md:text-4xl md:leading-tight text-white">Our Products</h2>
+    <div class="intro-x flex items-center h-10 text-white">
+      <h2 class="text-3xl font-medium truncate mr-auto">
+        Important Notes
+      </h2>
+      <button
+        data-carousel="important-notes"
+        data-target="prev"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="prevImportantNotes"
+      >
+        <ChevronLeftIcon class="w-4 h-4" />
+      </button>
+      <button
+        data-carousel="important-notes"
+        data-target="next"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="nextImportantNotes"
+      >
+        <ChevronRightIcon class="w-4 h-4" />
+      </button>
+
+      See More >
     </div>
     <!-- End Title -->
 
     <!-- Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-      <div class="text-center">
-        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+    <div class="overflow-x-auto whitespace-nowrap">
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
         <div class="mt-2 sm:mt-4">
-          <h3 class="text-lg font-medium text-gray-800 sm:text-base lg:text-lg text-neutral-200">
-            Product Name
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
           </h3>
-          <p class="text-m text-gray-600 sm:text-m lg:text-base text-neutral-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium labore, corrupti doloribus ea cumque odio, culpa repellendus explicabo odit praesentium neque minus? Quasi laborum consequuntur omnis aperiam similique laudantium mollitia.
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
           </p>
         </div>
       </div>
       <!-- End Col -->
 
-      <div class="text-center">
-        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
         <div class="mt-2 sm:mt-4">
-          <h3 class="text-lg font-medium text-gray-800 sm:text-base lg:text-lg text-neutral-200">
-            Product Name
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
           </h3>
-          <p class="text-m text-gray-600 sm:text-m lg:text-base text-neutral-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium labore, corrupti doloribus ea cumque odio, culpa repellendus explicabo odit praesentium neque minus? Quasi laborum consequuntur omnis aperiam similique laudantium mollitia.
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
           </p>
         </div>
       </div>
       <!-- End Col -->
 
-      <div class="text-center">
-        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
         <div class="mt-2 sm:mt-4">
-          <h3 class="text-lg font-medium text-gray-800 sm:text-base lg:text-lg text-neutral-200">
-            Product Name
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
           </h3>
-          <p class="text-m text-gray-600 sm:text-m lg:text-base text-neutral-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium labore, corrupti doloribus ea cumque odio, culpa repellendus explicabo odit praesentium neque minus? Quasi laborum consequuntur omnis aperiam similique laudantium mollitia.
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
           </p>
         </div>
       </div>
       <!-- End Col -->
 
-      <div class="text-center">
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
         <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
         <div class="mt-2 sm:mt-4">
-          <h3 class="text-lg font-medium text-gray-800 sm:text-base lg:text-lg text-neutral-200">
-            Product Name
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Maria Powers
           </h3>
-          <p class="text-m text-gray-600 sm:text-m lg:text-base text-neutral-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium labore, corrupti doloribus ea cumque odio, culpa repellendus explicabo odit praesentium neque minus? Quasi laborum consequuntur omnis aperiam similique laudantium mollitia.
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Director of sales
           </p>
         </div>
-      </div>
+      </div> -->
       <!-- End Col -->
 
-      <div class="text-center">
+      <!-- <div class="text-center">
         <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
         <div class="mt-2 sm:mt-4">
-          <h3 class="text-lg font-medium text-gray-800 sm:text-base lg:text-lg text-neutral-200">
-            Product Name
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Delia Pawelke
           </h3>
-          <p class="text-m text-gray-600 sm:text-m lg:text-base text-neutral-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium labore, corrupti doloribus ea cumque odio, culpa repellendus explicabo odit praesentium neque minus? Quasi laborum consequuntur omnis aperiam similique laudantium mollitia.
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Front-end Developer
           </p>
         </div>
-      </div>
+      </div> -->
       <!-- End Col -->
 
-      <div class="text-center">
+      <!-- <div class="text-center">
         <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1624224971170-2f84fed5eb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
         <div class="mt-2 sm:mt-4">
-          <h3 class="text-lg font-medium text-gray-800 sm:text-base lg:text-lg text-neutral-200">
-            Product Name
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Tom Lowry
           </h3>
-          <p class="text-m text-gray-600 sm:text-m lg:text-base text-neutral-400">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium labore, corrupti doloribus ea cumque odio, culpa repellendus explicabo odit praesentium neque minus? Quasi laborum consequuntur omnis aperiam similique laudantium mollitia.
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            UI/UX Designer
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Louise Donadieu
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Support Consultant
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1514222709107-a180c68d72b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Jeff Fisher
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Project Manager
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1602452920335-6a132309c7c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Sophia Harrington
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Project Manager
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Team -->
+
+  <!-- Team -->
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <!-- Title -->
+    <div class="intro-x flex items-center h-10 text-white">
+      <h2 class="text-3xl font-medium truncate mr-auto">
+        Important Notes
+      </h2>
+      <button
+        data-carousel="important-notes"
+        data-target="prev"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="prevImportantNotes"
+      >
+        <ChevronLeftIcon class="w-4 h-4" />
+      </button>
+      <button
+        data-carousel="important-notes"
+        data-target="next"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="nextImportantNotes"
+      >
+        <ChevronRightIcon class="w-4 h-4" />
+      </button>
+
+      See More >
+    </div>
+    <!-- End Title -->
+
+    <!-- Grid -->
+    <div class="overflow-x-auto whitespace-nowrap">
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
           </p>
         </div>
       </div>
       <!-- End Col -->
 
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Maria Powers
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Director of sales
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Delia Pawelke
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Front-end Developer
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1624224971170-2f84fed5eb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Tom Lowry
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            UI/UX Designer
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Louise Donadieu
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Support Consultant
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1514222709107-a180c68d72b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Jeff Fisher
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Project Manager
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1602452920335-6a132309c7c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Sophia Harrington
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Project Manager
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Team -->
+
+  <!-- Team -->
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <!-- Title -->
+    <div class="intro-x flex items-center h-10 text-white">
+      <h2 class="text-3xl font-medium truncate mr-auto">
+        Important Notes
+      </h2>
+      <button
+        data-carousel="important-notes"
+        data-target="prev"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="prevImportantNotes"
+      >
+        <ChevronLeftIcon class="w-4 h-4" />
+      </button>
+      <button
+        data-carousel="important-notes"
+        data-target="next"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="nextImportantNotes"
+      >
+        <ChevronRightIcon class="w-4 h-4" />
+      </button>
+
+      See More >
+    </div>
+    <!-- End Title -->
+
+    <!-- Grid -->
+    <div class="overflow-x-auto whitespace-nowrap">
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Maria Powers
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Director of sales
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Delia Pawelke
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Front-end Developer
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1624224971170-2f84fed5eb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Tom Lowry
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            UI/UX Designer
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Louise Donadieu
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Support Consultant
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1514222709107-a180c68d72b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Jeff Fisher
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Project Manager
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1602452920335-6a132309c7c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Sophia Harrington
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Project Manager
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Team -->
+
+  <!-- Team -->
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <!-- Title -->
+    <div class="intro-x flex items-center h-10 text-white">
+      <h2 class="text-3xl font-medium truncate mr-auto">
+        Important Notes
+      </h2>
+      <button
+        data-carousel="important-notes"
+        data-target="prev"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="prevImportantNotes"
+      >
+        <ChevronLeftIcon class="w-4 h-4" />
+      </button>
+      <button
+        data-carousel="important-notes"
+        data-target="next"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="nextImportantNotes"
+      >
+        <ChevronRightIcon class="w-4 h-4" />
+      </button>
+
+      See More >
+    </div>
+    <!-- End Title -->
+
+    <!-- Grid -->
+    <div class="overflow-x-auto whitespace-nowrap">
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Maria Powers
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Director of sales
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Delia Pawelke
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Front-end Developer
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1624224971170-2f84fed5eb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Tom Lowry
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            UI/UX Designer
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Louise Donadieu
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Support Consultant
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1514222709107-a180c68d72b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Jeff Fisher
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Project Manager
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1602452920335-6a132309c7c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Sophia Harrington
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Project Manager
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Team -->
+
+  <!-- Team -->
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <!-- Title -->
+    <div class="intro-x flex items-center h-10 text-white">
+      <h2 class="text-3xl font-medium truncate mr-auto">
+        Our Products
+      </h2>
+      <button
+        data-carousel="important-notes"
+        data-target="prev"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="prevImportantNotes"
+      >
+        <ChevronLeftIcon class="w-4 h-4" />
+      </button>
+      <button
+        data-carousel="important-notes"
+        data-target="next"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="nextImportantNotes"
+      >
+        <ChevronRightIcon class="w-4 h-4" />
+      </button>
+
+      See More >
+    </div>
+    <!-- End Title -->
+
+    <!-- Grid -->
+    <div class="overflow-x-auto whitespace-nowrap">
+      <div class="inline-block h-100 mx-5">
+        <div class="relative overflow-hidden">
+          <div class="max-w-[85rem] px-4 py-12 sm:px-6 lg:px-8 lg:py-16 mx-auto">
+            <!-- Gradients -->
+            <div aria-hidden="true" class="flex -z-[1] absolute start-0">
+              <div class="bg-purple-200 opacity-20 blur-3xl w-[1036px] h-[300px] dark:bg-purple-900 dark:opacity-20"></div>
+            </div>
+            <!-- End Gradients -->
+
+            <!-- Grid -->
+            <div class="lg:grid lg:grid-cols-6 lg:gap-8 lg:items-center">
+              <div class="hidden lg:block lg:col-span-2">
+                <img class="rounded-xl" src="https://www.advacarepharma.com/wp-content/uploads/sanitary-pads-daytime-bag.png" alt="Avatar">
+              </div>
+              <!-- End Col -->
+
+              <div class="lg:col-span-4">
+                <!-- Blockquote -->
+                <blockquote>
+                  <!-- <svg class="w-24 h-auto mb-4" viewBox="-0.3 0 320.3999999999999 99.9" xmlns="http://www.w3.org/2000/svg" width="2500" height="779"><path d="M168.7 25.1c0 3.6-2.9 6.5-6.5 6.5s-6.5-2.9-6.5-6.5 2.8-6.5 6.5-6.5c3.7.1 6.5 3 6.5 6.5zm-26.8 13.1v1.6s-3.1-4-9.7-4c-10.9 0-19.4 8.3-19.4 19.8 0 11.4 8.4 19.8 19.4 19.8 6.7 0 9.7-4.1 9.7-4.1V73c0 .8.6 1.4 1.4 1.4h8.1V36.8h-8.1c-.8 0-1.4.7-1.4 1.4zm0 24.1c-1.5 2.2-4.5 4.1-8.1 4.1-6.4 0-11.3-4-11.3-10.8s4.9-10.8 11.3-10.8c3.5 0 6.7 2 8.1 4.1zm15.5-25.5h9.6v37.6h-9.6zm143.4-1c-6.6 0-9.7 4-9.7 4V18.7h-9.6v55.7h8.1c.8 0 1.4-.7 1.4-1.4v-1.7s3.1 4.1 9.7 4.1c10.9 0 19.4-8.4 19.4-19.8s-8.5-19.8-19.3-19.8zm-1.6 30.5c-3.7 0-6.6-1.9-8.1-4.1V48.8c1.5-2 4.7-4.1 8.1-4.1 6.4 0 11.3 4 11.3 10.8s-4.9 10.8-11.3 10.8zm-22.7-14.2v22.4h-9.6V53.2c0-6.2-2-8.7-7.4-8.7-2.9 0-5.9 1.5-7.8 3.7v26.2h-9.6V36.8h7.6c.8 0 1.4.7 1.4 1.4v1.6c2.8-2.9 6.5-4 10.2-4 4.2 0 7.7 1.2 10.5 3.6 3.4 2.8 4.7 6.4 4.7 12.7zm-57.7-16.3c-6.6 0-9.7 4-9.7 4V18.7h-9.6v55.7h8.1c.8 0 1.4-.7 1.4-1.4v-1.7s3.1 4.1 9.7 4.1c10.9 0 19.4-8.4 19.4-19.8.1-11.4-8.4-19.8-19.3-19.8zm-1.6 30.5c-3.7 0-6.6-1.9-8.1-4.1V48.8c1.5-2 4.7-4.1 8.1-4.1 6.4 0 11.3 4 11.3 10.8s-4.9 10.8-11.3 10.8zm-26-30.5c2.9 0 4.4.5 4.4.5v8.9s-8-2.7-13 3v26.3H173V36.8h8.1c.8 0 1.4.7 1.4 1.4v1.6c1.8-2.1 5.7-4 8.7-4zM91.5 71c-.5-1.2-1-2.5-1.5-3.6-.8-1.8-1.6-3.5-2.3-5.1l-.1-.1C80.7 47.2 73.3 32 65.5 17l-.3-.6c-.8-1.5-1.6-3.1-2.4-4.7-1-1.8-2-3.7-3.6-5.5C56 2.2 51.4 0 46.5 0c-5 0-9.5 2.2-12.8 6-1.5 1.8-2.6 3.7-3.6 5.5-.8 1.6-1.6 3.2-2.4 4.7l-.3.6C19.7 31.8 12.2 47 5.3 62l-.1.2c-.7 1.6-1.5 3.3-2.3 5.1-.5 1.1-1 2.3-1.5 3.6C.1 74.6-.3 78.1.2 81.7c1.1 7.5 6.1 13.8 13 16.6 2.6 1.1 5.3 1.6 8.1 1.6.8 0 1.8-.1 2.6-.2 3.3-.4 6.7-1.5 10-3.4 4.1-2.3 8-5.6 12.4-10.4 4.4 4.8 8.4 8.1 12.4 10.4 3.3 1.9 6.7 3 10 3.4.8.1 1.8.2 2.6.2 2.8 0 5.6-.5 8.1-1.6 7-2.8 11.9-9.2 13-16.6.8-3.5.4-7-.9-10.7zm-45.1 5.2C41 69.4 37.5 63 36.3 57.6c-.5-2.3-.6-4.3-.3-6.1.2-1.6.8-3 1.6-4.2 1.9-2.7 5.1-4.4 8.8-4.4s7 1.6 8.8 4.4c.8 1.2 1.4 2.6 1.6 4.2.3 1.8.2 3.9-.3 6.1-1.2 5.3-4.7 11.7-10.1 18.6zm39.9 4.7c-.7 5.2-4.2 9.7-9.1 11.7-2.4 1-5 1.3-7.6 1-2.5-.3-5-1.1-7.6-2.6-3.6-2-7.2-5.1-11.4-9.7 6.6-8.1 10.6-15.5 12.1-22.1.7-3.1.8-5.9.5-8.5-.4-2.5-1.3-4.8-2.7-6.8-3.1-4.5-8.3-7.1-14.1-7.1s-11 2.7-14.1 7.1c-1.4 2-2.3 4.3-2.7 6.8-.4 2.6-.3 5.5.5 8.5 1.5 6.6 5.6 14.1 12.1 22.2-4.1 4.6-7.8 7.7-11.4 9.7-2.6 1.5-5.1 2.3-7.6 2.6-2.7.3-5.3-.1-7.6-1-4.9-2-8.4-6.5-9.1-11.7-.3-2.5-.1-5 .9-7.8.3-1 .8-2 1.3-3.2.7-1.6 1.5-3.3 2.3-5l.1-.2c6.9-14.9 14.3-30.1 22-44.9l.3-.6c.8-1.5 1.6-3.1 2.4-4.6.8-1.6 1.7-3.1 2.8-4.4 2.1-2.4 4.9-3.7 8-3.7s5.9 1.3 8 3.7c1.1 1.3 2 2.8 2.8 4.4.8 1.5 1.6 3.1 2.4 4.6l.3.6c7.6 14.9 15 30.1 21.9 45v.1c.8 1.6 1.5 3.4 2.3 5 .5 1.2 1 2.2 1.3 3.2.8 2.6 1.1 5.1.7 7.7z" fill="#ff5a5f"/></svg> -->
+
+                  <p class="text-xl font-medium text-gray-800 lg:text-2xl lg:leading-normal dark:text-neutral-200">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem exercitationem repellat ipsam ipsum voluptatem minima obcaecati pariatur, nobis, quibusdam nihil in fuga enim. Cum qui ab inventore nobis ullam doloribus.
+                  </p>
+
+                  <footer class="mt-6">
+                    <div class="flex items-center">
+                      <div class="lg:hidden shrink-0">
+                        <!-- <img class="size-12 rounded-full" src="https://www.advacarepharma.com/wp-content/uploads/sanitary-pads-daytime-bag.png" alt="Avatar"> -->
+                      </div>
+                      <div class="ms-4 lg:ms-0 text-white">
+                        <p class="font-medium  dark:text-neutral-200">
+                          Nicole Grazioso
+                        </p>
+                        <p class="text-sm">
+                          Head of Finance
+                        </p>
+                      </div>
+                    </div>
+                  </footer>
+                </blockquote>
+                <!-- End Blockquote -->
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Grid -->
+          </div>
+        </div>
+        <!-- End Testimonials -->
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <div class="relative overflow-hidden">
+          <div class="max-w-[85rem] px-4 py-12 sm:px-6 lg:px-8 lg:py-16 mx-auto">
+            <!-- Gradients -->
+            <div aria-hidden="true" class="flex -z-[1] absolute start-0">
+              <div class="bg-purple-200 opacity-20 blur-3xl w-[1036px] h-[300px] dark:bg-purple-900 dark:opacity-20"></div>
+            </div>
+            <!-- End Gradients -->
+
+            <!-- Grid -->
+            <div class="lg:grid lg:grid-cols-6 lg:gap-8 lg:items-center">
+              <div class="hidden lg:block lg:col-span-2">
+                <img class="rounded-xl" src="https://www.advacarepharma.com/wp-content/uploads/sanitary-pads-daytime-bag.png" alt="Avatar">
+              </div>
+              <!-- End Col -->
+
+              <div class="lg:col-span-4">
+                <!-- Blockquote -->
+                <blockquote>
+                  <!-- <svg class="w-24 h-auto mb-4" viewBox="-0.3 0 320.3999999999999 99.9" xmlns="http://www.w3.org/2000/svg" width="2500" height="779"><path d="M168.7 25.1c0 3.6-2.9 6.5-6.5 6.5s-6.5-2.9-6.5-6.5 2.8-6.5 6.5-6.5c3.7.1 6.5 3 6.5 6.5zm-26.8 13.1v1.6s-3.1-4-9.7-4c-10.9 0-19.4 8.3-19.4 19.8 0 11.4 8.4 19.8 19.4 19.8 6.7 0 9.7-4.1 9.7-4.1V73c0 .8.6 1.4 1.4 1.4h8.1V36.8h-8.1c-.8 0-1.4.7-1.4 1.4zm0 24.1c-1.5 2.2-4.5 4.1-8.1 4.1-6.4 0-11.3-4-11.3-10.8s4.9-10.8 11.3-10.8c3.5 0 6.7 2 8.1 4.1zm15.5-25.5h9.6v37.6h-9.6zm143.4-1c-6.6 0-9.7 4-9.7 4V18.7h-9.6v55.7h8.1c.8 0 1.4-.7 1.4-1.4v-1.7s3.1 4.1 9.7 4.1c10.9 0 19.4-8.4 19.4-19.8s-8.5-19.8-19.3-19.8zm-1.6 30.5c-3.7 0-6.6-1.9-8.1-4.1V48.8c1.5-2 4.7-4.1 8.1-4.1 6.4 0 11.3 4 11.3 10.8s-4.9 10.8-11.3 10.8zm-22.7-14.2v22.4h-9.6V53.2c0-6.2-2-8.7-7.4-8.7-2.9 0-5.9 1.5-7.8 3.7v26.2h-9.6V36.8h7.6c.8 0 1.4.7 1.4 1.4v1.6c2.8-2.9 6.5-4 10.2-4 4.2 0 7.7 1.2 10.5 3.6 3.4 2.8 4.7 6.4 4.7 12.7zm-57.7-16.3c-6.6 0-9.7 4-9.7 4V18.7h-9.6v55.7h8.1c.8 0 1.4-.7 1.4-1.4v-1.7s3.1 4.1 9.7 4.1c10.9 0 19.4-8.4 19.4-19.8.1-11.4-8.4-19.8-19.3-19.8zm-1.6 30.5c-3.7 0-6.6-1.9-8.1-4.1V48.8c1.5-2 4.7-4.1 8.1-4.1 6.4 0 11.3 4 11.3 10.8s-4.9 10.8-11.3 10.8zm-26-30.5c2.9 0 4.4.5 4.4.5v8.9s-8-2.7-13 3v26.3H173V36.8h8.1c.8 0 1.4.7 1.4 1.4v1.6c1.8-2.1 5.7-4 8.7-4zM91.5 71c-.5-1.2-1-2.5-1.5-3.6-.8-1.8-1.6-3.5-2.3-5.1l-.1-.1C80.7 47.2 73.3 32 65.5 17l-.3-.6c-.8-1.5-1.6-3.1-2.4-4.7-1-1.8-2-3.7-3.6-5.5C56 2.2 51.4 0 46.5 0c-5 0-9.5 2.2-12.8 6-1.5 1.8-2.6 3.7-3.6 5.5-.8 1.6-1.6 3.2-2.4 4.7l-.3.6C19.7 31.8 12.2 47 5.3 62l-.1.2c-.7 1.6-1.5 3.3-2.3 5.1-.5 1.1-1 2.3-1.5 3.6C.1 74.6-.3 78.1.2 81.7c1.1 7.5 6.1 13.8 13 16.6 2.6 1.1 5.3 1.6 8.1 1.6.8 0 1.8-.1 2.6-.2 3.3-.4 6.7-1.5 10-3.4 4.1-2.3 8-5.6 12.4-10.4 4.4 4.8 8.4 8.1 12.4 10.4 3.3 1.9 6.7 3 10 3.4.8.1 1.8.2 2.6.2 2.8 0 5.6-.5 8.1-1.6 7-2.8 11.9-9.2 13-16.6.8-3.5.4-7-.9-10.7zm-45.1 5.2C41 69.4 37.5 63 36.3 57.6c-.5-2.3-.6-4.3-.3-6.1.2-1.6.8-3 1.6-4.2 1.9-2.7 5.1-4.4 8.8-4.4s7 1.6 8.8 4.4c.8 1.2 1.4 2.6 1.6 4.2.3 1.8.2 3.9-.3 6.1-1.2 5.3-4.7 11.7-10.1 18.6zm39.9 4.7c-.7 5.2-4.2 9.7-9.1 11.7-2.4 1-5 1.3-7.6 1-2.5-.3-5-1.1-7.6-2.6-3.6-2-7.2-5.1-11.4-9.7 6.6-8.1 10.6-15.5 12.1-22.1.7-3.1.8-5.9.5-8.5-.4-2.5-1.3-4.8-2.7-6.8-3.1-4.5-8.3-7.1-14.1-7.1s-11 2.7-14.1 7.1c-1.4 2-2.3 4.3-2.7 6.8-.4 2.6-.3 5.5.5 8.5 1.5 6.6 5.6 14.1 12.1 22.2-4.1 4.6-7.8 7.7-11.4 9.7-2.6 1.5-5.1 2.3-7.6 2.6-2.7.3-5.3-.1-7.6-1-4.9-2-8.4-6.5-9.1-11.7-.3-2.5-.1-5 .9-7.8.3-1 .8-2 1.3-3.2.7-1.6 1.5-3.3 2.3-5l.1-.2c6.9-14.9 14.3-30.1 22-44.9l.3-.6c.8-1.5 1.6-3.1 2.4-4.6.8-1.6 1.7-3.1 2.8-4.4 2.1-2.4 4.9-3.7 8-3.7s5.9 1.3 8 3.7c1.1 1.3 2 2.8 2.8 4.4.8 1.5 1.6 3.1 2.4 4.6l.3.6c7.6 14.9 15 30.1 21.9 45v.1c.8 1.6 1.5 3.4 2.3 5 .5 1.2 1 2.2 1.3 3.2.8 2.6 1.1 5.1.7 7.7z" fill="#ff5a5f"/></svg> -->
+
+                  <p class="text-xl font-medium text-gray-800 lg:text-2xl lg:leading-normal dark:text-neutral-200">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem exercitationem repellat ipsam ipsum voluptatem minima obcaecati pariatur, nobis, quibusdam nihil in fuga enim. Cum qui ab inventore nobis ullam doloribus.
+                  </p>
+
+                  <footer class="mt-6">
+                    <div class="flex items-center">
+                      <div class="lg:hidden shrink-0">
+                        <!-- <img class="size-12 rounded-full" src="https://www.advacarepharma.com/wp-content/uploads/sanitary-pads-daytime-bag.png" alt="Avatar"> -->
+                      </div>
+                      <div class="ms-4 lg:ms-0 text-white">
+                        <p class="font-medium  dark:text-neutral-200">
+                          Nicole Grazioso
+                        </p>
+                        <p class="text-sm">
+                          Head of Finance
+                        </p>
+                      </div>
+                    </div>
+                  </footer>
+                </blockquote>
+                <!-- End Blockquote -->
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Grid -->
+          </div>
+        </div>
+        <!-- End Testimonials -->
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <div class="relative overflow-hidden">
+          <div class="max-w-[85rem] px-4 py-12 sm:px-6 lg:px-8 lg:py-16 mx-auto">
+            <!-- Gradients -->
+            <div aria-hidden="true" class="flex -z-[1] absolute start-0">
+              <div class="bg-purple-200 opacity-20 blur-3xl w-[1036px] h-[300px] dark:bg-purple-900 dark:opacity-20"></div>
+            </div>
+            <!-- End Gradients -->
+
+            <!-- Grid -->
+            <div class="lg:grid lg:grid-cols-6 lg:gap-8 lg:items-center">
+              <div class="hidden lg:block lg:col-span-2">
+                <img class="rounded-xl" src="https://www.advacarepharma.com/wp-content/uploads/sanitary-pads-daytime-bag.png" alt="Avatar">
+              </div>
+              <!-- End Col -->
+
+              <div class="lg:col-span-4">
+                <!-- Blockquote -->
+                <blockquote>
+                  <!-- <svg class="w-24 h-auto mb-4" viewBox="-0.3 0 320.3999999999999 99.9" xmlns="http://www.w3.org/2000/svg" width="2500" height="779"><path d="M168.7 25.1c0 3.6-2.9 6.5-6.5 6.5s-6.5-2.9-6.5-6.5 2.8-6.5 6.5-6.5c3.7.1 6.5 3 6.5 6.5zm-26.8 13.1v1.6s-3.1-4-9.7-4c-10.9 0-19.4 8.3-19.4 19.8 0 11.4 8.4 19.8 19.4 19.8 6.7 0 9.7-4.1 9.7-4.1V73c0 .8.6 1.4 1.4 1.4h8.1V36.8h-8.1c-.8 0-1.4.7-1.4 1.4zm0 24.1c-1.5 2.2-4.5 4.1-8.1 4.1-6.4 0-11.3-4-11.3-10.8s4.9-10.8 11.3-10.8c3.5 0 6.7 2 8.1 4.1zm15.5-25.5h9.6v37.6h-9.6zm143.4-1c-6.6 0-9.7 4-9.7 4V18.7h-9.6v55.7h8.1c.8 0 1.4-.7 1.4-1.4v-1.7s3.1 4.1 9.7 4.1c10.9 0 19.4-8.4 19.4-19.8s-8.5-19.8-19.3-19.8zm-1.6 30.5c-3.7 0-6.6-1.9-8.1-4.1V48.8c1.5-2 4.7-4.1 8.1-4.1 6.4 0 11.3 4 11.3 10.8s-4.9 10.8-11.3 10.8zm-22.7-14.2v22.4h-9.6V53.2c0-6.2-2-8.7-7.4-8.7-2.9 0-5.9 1.5-7.8 3.7v26.2h-9.6V36.8h7.6c.8 0 1.4.7 1.4 1.4v1.6c2.8-2.9 6.5-4 10.2-4 4.2 0 7.7 1.2 10.5 3.6 3.4 2.8 4.7 6.4 4.7 12.7zm-57.7-16.3c-6.6 0-9.7 4-9.7 4V18.7h-9.6v55.7h8.1c.8 0 1.4-.7 1.4-1.4v-1.7s3.1 4.1 9.7 4.1c10.9 0 19.4-8.4 19.4-19.8.1-11.4-8.4-19.8-19.3-19.8zm-1.6 30.5c-3.7 0-6.6-1.9-8.1-4.1V48.8c1.5-2 4.7-4.1 8.1-4.1 6.4 0 11.3 4 11.3 10.8s-4.9 10.8-11.3 10.8zm-26-30.5c2.9 0 4.4.5 4.4.5v8.9s-8-2.7-13 3v26.3H173V36.8h8.1c.8 0 1.4.7 1.4 1.4v1.6c1.8-2.1 5.7-4 8.7-4zM91.5 71c-.5-1.2-1-2.5-1.5-3.6-.8-1.8-1.6-3.5-2.3-5.1l-.1-.1C80.7 47.2 73.3 32 65.5 17l-.3-.6c-.8-1.5-1.6-3.1-2.4-4.7-1-1.8-2-3.7-3.6-5.5C56 2.2 51.4 0 46.5 0c-5 0-9.5 2.2-12.8 6-1.5 1.8-2.6 3.7-3.6 5.5-.8 1.6-1.6 3.2-2.4 4.7l-.3.6C19.7 31.8 12.2 47 5.3 62l-.1.2c-.7 1.6-1.5 3.3-2.3 5.1-.5 1.1-1 2.3-1.5 3.6C.1 74.6-.3 78.1.2 81.7c1.1 7.5 6.1 13.8 13 16.6 2.6 1.1 5.3 1.6 8.1 1.6.8 0 1.8-.1 2.6-.2 3.3-.4 6.7-1.5 10-3.4 4.1-2.3 8-5.6 12.4-10.4 4.4 4.8 8.4 8.1 12.4 10.4 3.3 1.9 6.7 3 10 3.4.8.1 1.8.2 2.6.2 2.8 0 5.6-.5 8.1-1.6 7-2.8 11.9-9.2 13-16.6.8-3.5.4-7-.9-10.7zm-45.1 5.2C41 69.4 37.5 63 36.3 57.6c-.5-2.3-.6-4.3-.3-6.1.2-1.6.8-3 1.6-4.2 1.9-2.7 5.1-4.4 8.8-4.4s7 1.6 8.8 4.4c.8 1.2 1.4 2.6 1.6 4.2.3 1.8.2 3.9-.3 6.1-1.2 5.3-4.7 11.7-10.1 18.6zm39.9 4.7c-.7 5.2-4.2 9.7-9.1 11.7-2.4 1-5 1.3-7.6 1-2.5-.3-5-1.1-7.6-2.6-3.6-2-7.2-5.1-11.4-9.7 6.6-8.1 10.6-15.5 12.1-22.1.7-3.1.8-5.9.5-8.5-.4-2.5-1.3-4.8-2.7-6.8-3.1-4.5-8.3-7.1-14.1-7.1s-11 2.7-14.1 7.1c-1.4 2-2.3 4.3-2.7 6.8-.4 2.6-.3 5.5.5 8.5 1.5 6.6 5.6 14.1 12.1 22.2-4.1 4.6-7.8 7.7-11.4 9.7-2.6 1.5-5.1 2.3-7.6 2.6-2.7.3-5.3-.1-7.6-1-4.9-2-8.4-6.5-9.1-11.7-.3-2.5-.1-5 .9-7.8.3-1 .8-2 1.3-3.2.7-1.6 1.5-3.3 2.3-5l.1-.2c6.9-14.9 14.3-30.1 22-44.9l.3-.6c.8-1.5 1.6-3.1 2.4-4.6.8-1.6 1.7-3.1 2.8-4.4 2.1-2.4 4.9-3.7 8-3.7s5.9 1.3 8 3.7c1.1 1.3 2 2.8 2.8 4.4.8 1.5 1.6 3.1 2.4 4.6l.3.6c7.6 14.9 15 30.1 21.9 45v.1c.8 1.6 1.5 3.4 2.3 5 .5 1.2 1 2.2 1.3 3.2.8 2.6 1.1 5.1.7 7.7z" fill="#ff5a5f"/></svg> -->
+
+                  <p class="text-xl font-medium text-gray-800 lg:text-2xl lg:leading-normal dark:text-neutral-200">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem exercitationem repellat ipsam ipsum voluptatem minima obcaecati pariatur, nobis, quibusdam nihil in fuga enim. Cum qui ab inventore nobis ullam doloribus.
+                  </p>
+
+                  <footer class="mt-6">
+                    <div class="flex items-center">
+                      <div class="lg:hidden shrink-0">
+                        <!-- <img class="size-12 rounded-full" src="https://www.advacarepharma.com/wp-content/uploads/sanitary-pads-daytime-bag.png" alt="Avatar"> -->
+                      </div>
+                      <div class="ms-4 lg:ms-0 text-white">
+                        <p class="font-medium  dark:text-neutral-200">
+                          Nicole Grazioso
+                        </p>
+                        <p class="text-sm">
+                          Head of Finance
+                        </p>
+                      </div>
+                    </div>
+                  </footer>
+                </blockquote>
+                <!-- End Blockquote -->
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Grid -->
+          </div>
+        </div>
+        <!-- End Testimonials -->
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <div class="relative overflow-hidden">
+          <div class="max-w-[85rem] px-4 py-12 sm:px-6 lg:px-8 lg:py-16 mx-auto">
+            <!-- Gradients -->
+            <div aria-hidden="true" class="flex -z-[1] absolute start-0">
+              <div class="bg-purple-200 opacity-20 blur-3xl w-[1036px] h-[300px] dark:bg-purple-900 dark:opacity-20"></div>
+            </div>
+            <!-- End Gradients -->
+
+            <!-- Grid -->
+            <div class="lg:grid lg:grid-cols-6 lg:gap-8 lg:items-center">
+              <div class="hidden lg:block lg:col-span-2">
+                <img class="rounded-xl" src="https://www.advacarepharma.com/wp-content/uploads/sanitary-pads-daytime-bag.png" alt="Avatar">
+              </div>
+              <!-- End Col -->
+
+              <div class="lg:col-span-4">
+                <!-- Blockquote -->
+                <blockquote>
+                  <!-- <svg class="w-24 h-auto mb-4" viewBox="-0.3 0 320.3999999999999 99.9" xmlns="http://www.w3.org/2000/svg" width="2500" height="779"><path d="M168.7 25.1c0 3.6-2.9 6.5-6.5 6.5s-6.5-2.9-6.5-6.5 2.8-6.5 6.5-6.5c3.7.1 6.5 3 6.5 6.5zm-26.8 13.1v1.6s-3.1-4-9.7-4c-10.9 0-19.4 8.3-19.4 19.8 0 11.4 8.4 19.8 19.4 19.8 6.7 0 9.7-4.1 9.7-4.1V73c0 .8.6 1.4 1.4 1.4h8.1V36.8h-8.1c-.8 0-1.4.7-1.4 1.4zm0 24.1c-1.5 2.2-4.5 4.1-8.1 4.1-6.4 0-11.3-4-11.3-10.8s4.9-10.8 11.3-10.8c3.5 0 6.7 2 8.1 4.1zm15.5-25.5h9.6v37.6h-9.6zm143.4-1c-6.6 0-9.7 4-9.7 4V18.7h-9.6v55.7h8.1c.8 0 1.4-.7 1.4-1.4v-1.7s3.1 4.1 9.7 4.1c10.9 0 19.4-8.4 19.4-19.8s-8.5-19.8-19.3-19.8zm-1.6 30.5c-3.7 0-6.6-1.9-8.1-4.1V48.8c1.5-2 4.7-4.1 8.1-4.1 6.4 0 11.3 4 11.3 10.8s-4.9 10.8-11.3 10.8zm-22.7-14.2v22.4h-9.6V53.2c0-6.2-2-8.7-7.4-8.7-2.9 0-5.9 1.5-7.8 3.7v26.2h-9.6V36.8h7.6c.8 0 1.4.7 1.4 1.4v1.6c2.8-2.9 6.5-4 10.2-4 4.2 0 7.7 1.2 10.5 3.6 3.4 2.8 4.7 6.4 4.7 12.7zm-57.7-16.3c-6.6 0-9.7 4-9.7 4V18.7h-9.6v55.7h8.1c.8 0 1.4-.7 1.4-1.4v-1.7s3.1 4.1 9.7 4.1c10.9 0 19.4-8.4 19.4-19.8.1-11.4-8.4-19.8-19.3-19.8zm-1.6 30.5c-3.7 0-6.6-1.9-8.1-4.1V48.8c1.5-2 4.7-4.1 8.1-4.1 6.4 0 11.3 4 11.3 10.8s-4.9 10.8-11.3 10.8zm-26-30.5c2.9 0 4.4.5 4.4.5v8.9s-8-2.7-13 3v26.3H173V36.8h8.1c.8 0 1.4.7 1.4 1.4v1.6c1.8-2.1 5.7-4 8.7-4zM91.5 71c-.5-1.2-1-2.5-1.5-3.6-.8-1.8-1.6-3.5-2.3-5.1l-.1-.1C80.7 47.2 73.3 32 65.5 17l-.3-.6c-.8-1.5-1.6-3.1-2.4-4.7-1-1.8-2-3.7-3.6-5.5C56 2.2 51.4 0 46.5 0c-5 0-9.5 2.2-12.8 6-1.5 1.8-2.6 3.7-3.6 5.5-.8 1.6-1.6 3.2-2.4 4.7l-.3.6C19.7 31.8 12.2 47 5.3 62l-.1.2c-.7 1.6-1.5 3.3-2.3 5.1-.5 1.1-1 2.3-1.5 3.6C.1 74.6-.3 78.1.2 81.7c1.1 7.5 6.1 13.8 13 16.6 2.6 1.1 5.3 1.6 8.1 1.6.8 0 1.8-.1 2.6-.2 3.3-.4 6.7-1.5 10-3.4 4.1-2.3 8-5.6 12.4-10.4 4.4 4.8 8.4 8.1 12.4 10.4 3.3 1.9 6.7 3 10 3.4.8.1 1.8.2 2.6.2 2.8 0 5.6-.5 8.1-1.6 7-2.8 11.9-9.2 13-16.6.8-3.5.4-7-.9-10.7zm-45.1 5.2C41 69.4 37.5 63 36.3 57.6c-.5-2.3-.6-4.3-.3-6.1.2-1.6.8-3 1.6-4.2 1.9-2.7 5.1-4.4 8.8-4.4s7 1.6 8.8 4.4c.8 1.2 1.4 2.6 1.6 4.2.3 1.8.2 3.9-.3 6.1-1.2 5.3-4.7 11.7-10.1 18.6zm39.9 4.7c-.7 5.2-4.2 9.7-9.1 11.7-2.4 1-5 1.3-7.6 1-2.5-.3-5-1.1-7.6-2.6-3.6-2-7.2-5.1-11.4-9.7 6.6-8.1 10.6-15.5 12.1-22.1.7-3.1.8-5.9.5-8.5-.4-2.5-1.3-4.8-2.7-6.8-3.1-4.5-8.3-7.1-14.1-7.1s-11 2.7-14.1 7.1c-1.4 2-2.3 4.3-2.7 6.8-.4 2.6-.3 5.5.5 8.5 1.5 6.6 5.6 14.1 12.1 22.2-4.1 4.6-7.8 7.7-11.4 9.7-2.6 1.5-5.1 2.3-7.6 2.6-2.7.3-5.3-.1-7.6-1-4.9-2-8.4-6.5-9.1-11.7-.3-2.5-.1-5 .9-7.8.3-1 .8-2 1.3-3.2.7-1.6 1.5-3.3 2.3-5l.1-.2c6.9-14.9 14.3-30.1 22-44.9l.3-.6c.8-1.5 1.6-3.1 2.4-4.6.8-1.6 1.7-3.1 2.8-4.4 2.1-2.4 4.9-3.7 8-3.7s5.9 1.3 8 3.7c1.1 1.3 2 2.8 2.8 4.4.8 1.5 1.6 3.1 2.4 4.6l.3.6c7.6 14.9 15 30.1 21.9 45v.1c.8 1.6 1.5 3.4 2.3 5 .5 1.2 1 2.2 1.3 3.2.8 2.6 1.1 5.1.7 7.7z" fill="#ff5a5f"/></svg> -->
+
+                  <p class="text-xl font-medium text-gray-800 lg:text-2xl lg:leading-normal dark:text-neutral-200">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem exercitationem repellat ipsam ipsum voluptatem minima obcaecati pariatur, nobis, quibusdam nihil in fuga enim. Cum qui ab inventore nobis ullam doloribus.
+                  </p>
+
+                  <footer class="mt-6">
+                    <div class="flex items-center">
+                      <div class="lg:hidden shrink-0">
+                        <!-- <img class="size-12 rounded-full" src="https://www.advacarepharma.com/wp-content/uploads/sanitary-pads-daytime-bag.png" alt="Avatar"> -->
+                      </div>
+                      <div class="ms-4 lg:ms-0 text-white">
+                        <p class="font-medium  dark:text-neutral-200">
+                          Nicole Grazioso
+                        </p>
+                        <p class="text-sm">
+                          Head of Finance
+                        </p>
+                      </div>
+                    </div>
+                  </footer>
+                </blockquote>
+                <!-- End Blockquote -->
+              </div>
+              <!-- End Col -->
+            </div>
+            <!-- End Grid -->
+          </div>
+        </div>
+        <!-- End Testimonials -->
+      </div>
+      <!-- End Col -->
     </div>
     <!-- End Grid -->
   </div>
@@ -645,24 +1670,99 @@
       <!-- Content -->
       <div class="space-y-5 md:space-y-8">
         <div class="space-y-3">
-          <h2 class="text-2xl font-bold md:text-3xl text-white">About Ethiopia</h2>
+          <h2 class="text-2xl font-bold md:text-3xl text-white">Ingredients for making Always sanitary pads</h2>
 
-          <p class="text-lg text-gray-800 text-neutral-200">At Result, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow.</p>
+          <p class="text-lg text-gray-800 text-neutral-200">A quick look at how safe Always pads are, what goes into them, and how women's protection and comfort are our company's top priorities.</p>
         </div>
 
-        <p class="text-lg text-gray-800 text-neutral-200">We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.</p>
-
-        <!-- <figure>
-          <img class="w-full object-cover rounded-xl" src="https://images.unsplash.com/photo-1670272505340-d906d8d77d03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80" alt="Blog Image">
+        <figure>
+          <img class="w-full object-cover rounded-xl" src="https://images.ctfassets.net/7uyp0xssk5ur/7EWZbf8jRnd8WUNGIrLHE2/4524d125c7bb7246a612a3ead4692a4f/DT_Banner_2x.jpg?w=1600" alt="Blog Image">
           <figcaption class="mt-3 text-sm text-center text-gray-500 dark:text-neutral-500">
             A woman sitting at a table.
           </figcaption>
-        </figure> -->
+        </figure>
 
-        <p class="text-lg text-gray-800 text-neutral-200">As we've grown, we've seen how Result has helped companies such as Spotify, Microsoft, Airbnb, Facebook, and Intercom bring their designers closer together to create amazing things. We've also learned that when the culture of sharing is brought in earlier, the better teams adapt and communicate with one another.</p>
+        <p class="text-lg text-gray-800 text-neutral-200">How are Always products made? What materials are used to make them and what does the process look like? Are Always pads safe for women and girls? If you’ve always wondered about these questions, here’s a quick primer on what goes into an Always product.</p>
 
-        <p class="text-lg text-gray-800 text-neutral-200">That's why we are excited to share that we now have a <a class="text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium dark:text-blue-500" href="#">free version of Result</a>, which will allow individual designers, startups and other small teams a chance to create a culture of openness early on.</p>
+        <p class="text-lg text-gray-800 text-neutral-200">Read more about the safety of Always pads and other products below.</p>
 
+        <h3 class="text-2xl text-gray-800 text-neutral-200">What's in Always pads?</h3>
+
+        <p class="text-lg text-gray-800 text-neutral-200">Always is designed for perfection. Our pads in the UAE and KSA, as in the rest of the world, are made of four layers, namely the top layer, the secondary top layer, the absorbent core and the back layer. Each layer helps provide comfort and protection during your most special days. They absorb fluid quickly and transfer it to the high-quality core.</p>
+
+        <h3 class="text-2xl text-gray-800 text-neutral-200">The absolute safety of Always pads in the region</h3>
+        
+        <p class="text-lg text-gray-800 text-neutral-200">As with all our markets, Always pads in the region are also manufactured to strict international safety standards. The well-being of our women is at the heart of every product we create. Safety assessments and formulas for Always products are reviewed by a number of independent industry experts including health authorities, university scientists and doctors. This helps us provide you with the best comfort.</p>
+
+        <h3 class="text-2xl text-gray-800 text-neutral-200">How safe are Always pads?</h3>
+
+        <p class="text-lg text-gray-800 text-neutral-200">Here's how to make sure every sanitary pad that goes out to local stores and online retailers is safe to use.</p>
+
+        <h3 class="text-2xl text-gray-800 text-neutral-200">Responds to the unique needs of each woman.</h3>
+
+        <p class="text-lg text-gray-800 text-neutral-200">Our products undergo rigorous safety testing. Always pads are safe to use and are manufactured to meet the unique needs of every woman. To further meet the needs of women with sensitive skin, we also produce pads designed with a soft top cover.</p>
+
+        <h3 class="text-2xl text-gray-800 text-neutral-200">New improved set</h3>
+
+        <p class="text-lg text-gray-800 text-neutral-200">Always believes in keeping up with the times. Our new breathable top sheet is soft and gentle on your skin and provides optimal protection during heavy flow days. Check out our new range of sanitary pads today.</p>
+
+        <h3 class="text-2xl text-gray-800 text-neutral-200">Use PE tape - for best quality</h3>
+
+        <p class="text-lg text-gray-800 text-neutral-200">Our products are designed using perforated films containing polyethylene (PE). This helps us maintain the quality of our products. We use PE in our products in all the countries we operate in as a means of preventing leaks. PE films are safely used in a wide range of industries:</p>
+
+        <ul>
+          <li><p class="text-lg text-gray-800 text-neutral-200">Polyethylene is a widely used ingredient in medical products such as bandages, prosthetics, and surgical sutures.</p></li>
+          <li><p class="text-lg text-gray-800 text-neutral-200">It is used to preserve food in the form of food pouches, squeezable bottles, milk bottles, cereal boxes, liners, and more.</p></li>
+        </ul>
+
+        <h3 class="text-2xl text-gray-800 text-neutral-200">Polyethylene membranes work in pads</h3>
+
+        <p class="text-lg text-gray-800 text-neutral-200">Polyethylene films work wonders in protecting against menstrual leaks as the ingredient keeps the fluid secure. Here are some reasons why they are effective:</p>
+
+        <ul>
+          <li><p class="text-lg text-gray-800 text-neutral-200">Polythene helps transport menstrual fluid to the absorbent core. Always uses it in fibre form as the top cover for menstrual pads.</p></li>
+          <li><p class="text-lg text-gray-800 text-neutral-200">PE membranes provide a soft, silky feel. This makes the pads extremely comfortable while addressing the risk of rashes.</p></li>
+          <li><p class="text-lg text-gray-800 text-neutral-200">We understand that women have unique needs. But that doesn’t mean they have to compromise. The Always Safety Promise is true for every product that leaves our factories.</p></li>
+        </ul>
+
+        <h3 class="text-2xl text-gray-800 text-neutral-200">Frequently Asked Questions</h3>
+
+        <p class="text-lg text-gray-800 text-neutral-200">Please take a look at some of the most frequently asked questions and their answers below. You can also contact us.</p>
+
+        <h3 class="text-2xl text-gray-800 text-neutral-200">Are Always products safe?</h3>
+
+        <p class="text-lg text-gray-800 text-neutral-200">Yes, our pads are safe and are used safely by millions of women every day. Your safety is at the heart of everything we do, which is why our products are rigorously tested, including evaluations by independent experts such as doctors, university scientists and health authorities. Over 1,800 quality tests are performed on pad materials during manufacturing and before use. Over 20,000 tests are performed on pads and their components by independent laboratories every year.</p>
+
+        <h3 class="text-2xl text-gray-800 text-neutral-200">Do pads irritate the skin?</h3>
+
+        <p class="text-lg text-gray-800 text-neutral-200">No, our pads should not cause skin irritation. All of our products undergo rigorous safety testing to ensure they are safe to use.</p>
+
+        <h3 class="text-2xl text-gray-800 text-neutral-200">Are scented pads safe? Won't they be irritating and make me feel itchy down there?</h3>
+
+        <p class="text-lg text-gray-800 text-neutral-200">Your safety is at the heart of everything we do, so just like our unscented pads, our scented products are safe to use. We choose materials, including the fragrance in our scented products, that won’t cause irritation or itching when used in a pad. Additionally, the fragrance used in our pads and liners meets the strict safety standards set by the International Fragrance Association, the world’s leading authority on fragrance safety.</p>
+
+        <h3 class="text-2xl text-gray-800 text-neutral-200">Why aren't Always pads made from 100% cotton?</h3>
+
+        <p class="text-lg text-gray-800 text-neutral-200">All Always products meet strict safety and effectiveness standards, regardless of the material they are made from. Always pads are designed to provide high levels of protection and comfort. The materials used in our pads enable us to better meet these performance needs.</p>
+
+        <h3 class="text-2xl text-gray-800 text-neutral-200">Is there chlorine bleach in sanitary pads?</h3>
+
+        <p class="text-lg text-gray-800 text-neutral-200">No, pads are always sterilized using a chlorine-free purification process. This is a safe process.</p>
+
+        <h3 class="text-2xl text-gray-800 text-neutral-200">Are there toxic dyes in sanitary pads?</h3>
+
+        <p class="text-lg text-gray-800 text-neutral-200">No, there are no toxic dyes in our pads. The dyes used in some of our pads have been rigorously evaluated by scientists, healthcare providers and government agencies to ensure they can be used safely.</p>
+        
+        <h3 class="text-2xl text-gray-800 text-neutral-200">How does Always ensure its products are safe?</h3>
+
+        <p class="text-lg text-gray-800 text-neutral-200">Rest assured, our science-based evaluation process works to ensure the safety of women who use our products. Only products and materials that meet our science-based safety standards can be featured in
+
+Market. Furthermore, we share our evaluations with scientists, healthcare providers, and regulatory bodies to ensure our products can be used safely.</p>
+        
+        <h3 class="text-2xl text-gray-800 text-neutral-200">Our commitment to safety</h3>
+
+        <p class="text-lg text-gray-800 text-neutral-200">Always is committed to ensuring that all of our products meet strict safety standards. Additionally, we believe it is important that our safety ratings and ingredients are reviewed by independent experts, who hold our products to their own skin safety standards.</p>
+        
         <!-- <blockquote class="text-center p-4 sm:px-7">
           <p class="text-xl font-medium text-gray-800 md:text-2xl md:leading-normal xl:text-2xl xl:leading-normal dark:text-neutral-200">
             To say that switching to Preline has been life-changing is an understatement. My business has tripled and I got my life back.
@@ -679,7 +1779,7 @@
           </figcaption>
         </figure> -->
 
-        <div class="space-y-3">
+        <!-- <div class="space-y-3">
           <h3 class="text-2xl font-semibold text-white">Bringing the culture of sharing to everyone</h3>
 
           <p class="text-lg text-gray-800 text-neutral-200">We know the power of sharing is real, and we want to create an opportunity for everyone to try Result and explore how transformative open communication can be. Now you can have a team of one or two designers and unlimited spectators (think PMs, management, marketing, etc.) share work and explore the design process earlier.</p>
@@ -690,7 +1790,7 @@
           <li class="ps-2">Result opened a new way of sharing. It's a persistent way for everyone to see and absorb each other's work," said David Scott, Creative Director at <a class="text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium dark:text-blue-500" href="#">Eventbrite</a>.</li>
         </ul>
 
-        <p class="text-lg text-gray-800 text-neutral-200">Small teams and individual designers need a space where they can watch the design process unfold, both for themselves and for the people they work with – no matter if it's a fellow designer, product manager, developer or client. Result allows you to invite more people into the process, creating a central place for conversation around design. As those teams grow, transparency and collaboration becomes integrated in how they communicate and work together.</p>
+        <p class="text-lg text-gray-800 text-neutral-200">Small teams and individual designers need a space where they can watch the design process unfold, both for themselves and for the people they work with – no matter if it's a fellow designer, product manager, developer or client. Result allows you to invite more people into the process, creating a central place for conversation around design. As those teams grow, transparency and collaboration becomes integrated in how they communicate and work together.</p> -->
 
         <!-- <div>
           <a class="m-1 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" href="#">
@@ -712,86 +1812,36 @@
   </div>
   <!-- End Blog Article -->
 
-<!-- Sticky Share Group -->
-<!-- <div class="sticky bottom-6 inset-x-0 text-center">
-  <div class="inline-block bg-white shadow-md rounded-full py-3 px-4 dark:bg-neutral-800">
-    <div class="flex items-center gap-x-1.5"> -->
-      <!-- Button -->
-      <!-- <div class="hs-tooltip inline-block">
-        <button type="button" class="hs-tooltip-toggle flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200">
-          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
-          875
-          <span class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded shadow-sm dark:bg-black" role="tooltip">
-            Like
-          </span>
-        </button>
-      </div> -->
-      <!-- Button -->
-
-      <!-- <div class="block h-3 border-e border-gray-300 mx-3 dark:border-neutral-600"></div> -->
-
-      <!-- Button -->
-      <!-- <div class="hs-tooltip inline-block">
-        <button type="button" class="hs-tooltip-toggle flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200">
-          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/></svg>
-          16
-          <span class="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded shadow-sm dark:bg-black" role="tooltip">
-            Comment
-          </span>
-        </button>
-      </div> -->
-      <!-- Button -->
-
-      <!-- <div class="block h-3 border-e border-gray-300 mx-3 dark:border-neutral-600"></div> -->
-
-      <!-- Button -->
-      <!-- <div class="hs-dropdown relative inline-flex">
-        <button id="hs-blog-article-share-dropdown" type="button" class="flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-          <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" x2="12" y1="2" y2="15"/></svg>
-          Share
-        </button>
-        <div class="hs-dropdown-menu w-56 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden mb-1 z-10 bg-gray-900 shadow-md rounded-xl p-2 dark:bg-neutral-950" role="menu" aria-orientation="vertical" aria-labelledby="hs-blog-article-share-dropdown">
-          <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:bg-white/10 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:focus:bg-neutral-900" href="#">
-            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-            Copy link
-          </a>
-          <div class="border-t border-gray-600 my-2 dark:border-neutral-800"></div>
-          <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:bg-white/10 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:focus:bg-neutral-900" href="#">
-            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-            </svg>
-            Share on Twitter
-          </a>
-          <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:bg-white/10 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:focus:bg-neutral-900" href="#">
-            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-            </svg>
-            Share on Facebook
-          </a>
-          <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg text-sm text-gray-400 hover:bg-white/10 focus:outline-none focus:bg-white/10 dark:text-neutral-400 dark:hover:bg-neutral-900 dark:focus:bg-neutral-900" href="#">
-            <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-            </svg>
-            Share on LinkedIn
-          </a>
-        </div>
-      </div> -->
-      <!-- Button -->
-    <!-- </div>
-  </div>
-</div> -->
-<!-- End Sticky Share Group -->
-
   <!-- Team -->
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     <!-- Title -->
-    <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-      <h2 class="text-2xl font-bold md:text-4xl md:leading-tight text-white">Check Our Products</h2>
+    <div class="intro-x flex items-center h-10 text-white">
+      <h2 class="text-3xl font-medium truncate mr-auto">
+        Important Notes
+      </h2>
+      <button
+        data-carousel="important-notes"
+        data-target="prev"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="prevImportantNotes"
+      >
+        <ChevronLeftIcon class="w-4 h-4" />
+      </button>
+      <button
+        data-carousel="important-notes"
+        data-target="next"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="nextImportantNotes"
+      >
+        <ChevronRightIcon class="w-4 h-4" />
+      </button>
+
+      See More >
     </div>
     <!-- End Title -->
 
     <!-- Grid -->
-    <div class="overflow-x-auto whitespace-nowrap">
+    <div class="overflow-hidden whitespace-nowrap">
       <div class="inline-block w-96 h-100 mx-10">
         <iframe class="rounded-xl mx-auto" width="420" height="315"
           src="https://www.youtube.com/embed/2xW9mTStyhM">
@@ -801,14 +1851,14 @@
           Your browser does not support the video tag.
         </video> -->
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <!-- <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
             David Forren
           </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+          <p class="text-gray-600 text-base text-white">
             Founder / CEO
           </p>
-        </div> -->
+        </div>
       </div>
       <!-- End Col -->
 
@@ -817,14 +1867,14 @@
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <!-- <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Amil Evara
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
           </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            UI/UX Designer
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
           </p>
-        </div> -->
+        </div>
       </div>
       <!-- End Col -->
 
@@ -833,14 +1883,14 @@
           src="https://www.youtube.com/embed/haMue6QUhlQ">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <!-- <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Ebele Egbuna
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
           </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            Support Consultant
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
           </p>
-        </div> -->
+        </div>
       </div>
       <!-- End Col -->
     </div>
@@ -851,8 +1901,28 @@
   <!-- Team -->
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     <!-- Title -->
-    <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-      <h2 class="text-2xl font-bold md:text-4xl md:leading-tight text-white">Check out More</h2>
+    <div class="intro-x flex items-center h-10 text-white">
+      <h2 class="text-3xl font-medium truncate mr-auto">
+        Important Notes
+      </h2>
+      <button
+        data-carousel="important-notes"
+        data-target="prev"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="prevImportantNotes"
+      >
+        <ChevronLeftIcon class="w-4 h-4" />
+      </button>
+      <button
+        data-carousel="important-notes"
+        data-target="next"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="nextImportantNotes"
+      >
+        <ChevronRightIcon class="w-4 h-4" />
+      </button>
+
+      See More >
     </div>
     <!-- End Title -->
 
@@ -862,15 +1932,14 @@
         <iframe class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
-        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <!-- <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Amil Evara
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
           </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            UI/UX Designer
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
           </p>
-        </div> -->
+        </div>
       </div>
       <!-- End Col -->
 
@@ -879,14 +1948,14 @@
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <!-- <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Amil Evara
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
           </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            UI/UX Designer
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
           </p>
-        </div> -->
+        </div>
       </div>
       <!-- End Col -->
 
@@ -895,14 +1964,14 @@
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <!-- <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Amil Evara
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
           </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            UI/UX Designer
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
           </p>
-        </div> -->
+        </div>
       </div>
       <!-- End Col -->
 
@@ -911,14 +1980,14 @@
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <!-- <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Amil Evara
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
           </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            UI/UX Designer
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
           </p>
-        </div> -->
+        </div>
       </div>
       <!-- End Col -->
 
@@ -927,14 +1996,14 @@
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <!-- <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Amil Evara
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
           </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            UI/UX Designer
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
           </p>
-        </div> -->
+        </div>
       </div>
       <!-- End Col -->
 
@@ -1020,189 +2089,196 @@
   </div>
   <!-- End Team -->
 
-  <!-- Comment Form -->
-  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-    <div class="mx-auto max-w-2xl">
-      <div class="text-center">
-        <h2 class="text-xl text-gray-800 font-bold sm:text-3xl text-white">
-          Give Us Your Review
-        </h2>
-      </div>
-
-      <!-- Card -->
-      <div class="mt-5 p-4 relative z-10 bg-white border rounded-xl sm:mt-10 md:p-10 dark:bg-neutral-900 dark:border-neutral-700">
-        <form>
-          <div class="mb-4 sm:mb-8">
-            <label for="hs-feedback-post-comment-name-1" class="block mb-2 text-sm font-medium dark:text-white">Full name</label>
-            <input type="text" id="hs-feedback-post-comment-name-1" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="Full name">
-          </div>
-
-          <div class="mb-4 sm:mb-8">
-            <label for="hs-feedback-post-comment-email-1" class="block mb-2 text-sm font-medium dark:text-white">Email address</label>
-            <input type="email" id="hs-feedback-post-comment-email-1" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="Email address">
-          </div>
-
-          <div class="mb-4 sm:mb-8">
-            <label for="hs-feedback-post-comment-product-1" class="block mb-2 text-sm font-medium dark:text-white">Product</label>
-            <select id="hs-feedback-post-comment-product-1" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="-">
-              <option value="">-</option>
-              <option value="1">Product 1</option>
-              <option value="2">Product 2</option>
-              <option value="3">Product 3</option>
-              <option value="4">Product 4</option>
-              <option value="5">Product 5</option>
-            </select>
-          </div>
-
-          <div class="mb-4 sm:mb-8">
-            <label for="hs-feedback-post-comment-rating-1" class="block mb-2 text-sm font-medium dark:text-white">Rating</label>
-            <select id="hs-feedback-post-comment-rating-1" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="-">
-              <option value="">-</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-          </div>
-
-          <div>
-            <label for="hs-feedback-post-comment-textarea-1" class="block mb-2 text-sm font-medium dark:text-white">Comment</label>
-            <div class="mt-1">
-              <textarea id="hs-feedback-post-comment-textarea-1" name="hs-feedback-post-comment-textarea-1" rows="3" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="Leave your comment here..."></textarea>
-            </div>
-          </div>
-
-          <div class="mt-6 grid">
-            <button type="submit" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">Submit</button>
-          </div>
-        </form>
-      </div>
-      <!-- End Card -->
-    </div>
-  </div>
-  <!-- End Comment Form -->
-
-  <!-- FAQ -->
+  <!-- Team -->
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     <!-- Title -->
-    <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-      <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Your questions, answered</h2>
-      <p class="mt-1 text-gray-600 dark:text-neutral-400">Answers to the most frequently asked questions.</p>
+    <div class="intro-x flex items-center h-10 text-white">
+      <h2 class="text-3xl font-medium truncate mr-auto">
+        Important Notes
+      </h2>
+      <button
+        data-carousel="important-notes"
+        data-target="prev"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="prevImportantNotes"
+      >
+        <ChevronLeftIcon class="w-4 h-4" />
+      </button>
+      <button
+        data-carousel="important-notes"
+        data-target="next"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="nextImportantNotes"
+      >
+        <ChevronRightIcon class="w-4 h-4" />
+      </button>
+
+      See More >
     </div>
     <!-- End Title -->
 
-    <div class="max-w-2xl mx-auto">
-      <!-- Accordion -->
-      <div class="hs-accordion-group">
-        <div class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/10 active" id="hs-basic-with-title-and-arrow-stretched-heading-one">
-          <button class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400" aria-expanded="true" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-one">
-            Can I cancel at anytime?
-            <svg class="hs-accordion-active:hidden block shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-            <svg class="hs-accordion-active:block hidden shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
-          </button>
-          <div id="hs-basic-with-title-and-arrow-stretched-collapse-one" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-one">
-            <p class="text-gray-800 dark:text-neutral-200">
-              Yes, you can cancel anytime no questions are asked while you cancel but we would highly appreciate if you will give us some feedback.
-            </p>
-          </div>
-        </div>
-
-        <div class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/10" id="hs-basic-with-title-and-arrow-stretched-heading-two">
-          <button class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-two">
-            My team has credits. How do we use them?
-            <svg class="hs-accordion-active:hidden block shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-            <svg class="hs-accordion-active:block hidden shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
-          </button>
-          <div id="hs-basic-with-title-and-arrow-stretched-collapse-two" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-two">
-            <p class="text-gray-800 dark:text-neutral-200">
-              Once your team signs up for a subscription plan. This is where we sit down, grab a cup of coffee and dial in the details.
-            </p>
-          </div>
-        </div>
-
-        <div class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/10" id="hs-basic-with-title-and-arrow-stretched-heading-three">
-          <button class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-three">
-            How does Result's pricing work?
-            <svg class="hs-accordion-active:hidden block shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-            <svg class="hs-accordion-active:block hidden shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
-          </button>
-          <div id="hs-basic-with-title-and-arrow-stretched-collapse-three" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-three">
-            <p class="text-gray-800 dark:text-neutral-200">
-              Our subscriptions are tiered. Understanding the task at hand and ironing out the wrinkles is key.
-            </p>
-          </div>
-        </div>
-
-        <div class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/10" id="hs-basic-with-title-and-arrow-stretched-heading-four">
-          <button class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-four">
-            How secure is Result?
-            <svg class="hs-accordion-active:hidden block shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-            <svg class="hs-accordion-active:block hidden shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
-          </button>
-          <div id="hs-basic-with-title-and-arrow-stretched-collapse-four" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-four">
-            <p class="text-gray-800 dark:text-neutral-200">
-              Protecting the data you trust to Rewsult is our first priority. This part is really crucial in keeping the project in line to completion.
-            </p>
-          </div>
-        </div>
-
-        <div class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/10" id="hs-basic-with-title-and-arrow-stretched-heading-five">
-          <button class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-five">
-            How do I get access to a theme I purchased?
-            <svg class="hs-accordion-active:hidden block shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-            <svg class="hs-accordion-active:block hidden shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
-          </button>
-          <div id="hs-basic-with-title-and-arrow-stretched-collapse-five" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-five">
-            <p class="text-gray-800 dark:text-neutral-200">
-              If you lose the link for a theme you purchased, don't panic! We've got you covered. You can login to your account, tap your avatar in the upper right corner, and tap Purchases. If you didn't create a login or can't remember the information, you can use our handy Redownload page, just remember to use the same email you originally made your purchases with.
-            </p>
-          </div>
-        </div>
-
-        <div class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/10" id="hs-basic-with-title-and-arrow-stretched-heading-six">
-          <button class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-six">
-            Upgrade License Type
-            <svg class="hs-accordion-active:hidden block shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-            <svg class="hs-accordion-active:block hidden shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
-          </button>
-          <div id="hs-basic-with-title-and-arrow-stretched-collapse-six" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-six">
-            <p class="text-gray-800 dark:text-neutral-200">
-              There may be times when you need to upgrade your license from the original type you purchased and we have a solution that ensures you can apply your original purchase cost to the new license purchase.
-            </p>
-          </div>
-        </div>
-
-        <div class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/10" id="hs-basic-with-title-and-arrow-stretched-heading-six">
-          <button class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-six">
-            Upgrade License Type
-            <svg class="hs-accordion-active:hidden block shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-            <svg class="hs-accordion-active:block hidden shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
-          </button>
-          <div id="hs-basic-with-title-and-arrow-stretched-collapse-six" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-six">
-            <p class="text-gray-800 dark:text-neutral-200">
-              There may be times when you need to upgrade your license from the original type you purchased and we have a solution that ensures you can apply your original purchase cost to the new license purchase.
-            </p>
-          </div>
-        </div>
-
-        <div class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6 dark:hs-accordion-active:bg-white/10" id="hs-basic-with-title-and-arrow-stretched-heading-six">
-          <button class="hs-accordion-toggle group pb-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-gray-800 rounded-lg transition hover:text-gray-500 focus:outline-none focus:text-gray-500 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400" aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-six">
-            Upgrade License Type
-            <svg class="hs-accordion-active:hidden block shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-            <svg class="hs-accordion-active:block hidden shrink-0 size-5 text-gray-600 group-hover:text-gray-500 dark:text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
-          </button>
-          <div id="hs-basic-with-title-and-arrow-stretched-collapse-six" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" role="region" aria-labelledby="hs-basic-with-title-and-arrow-stretched-heading-six">
-            <p class="text-gray-800 dark:text-neutral-200">
-              There may be times when you need to upgrade your license from the original type you purchased and we have a solution that ensures you can apply your original purchase cost to the new license purchase.
-            </p>
-          </div>
+    <!-- Grid -->
+    <div class="overflow-x-auto whitespace-nowrap">
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
         </div>
       </div>
-      <!-- End Accordion -->
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Maria Powers
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Director of sales
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Delia Pawelke
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Front-end Developer
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1624224971170-2f84fed5eb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Tom Lowry
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            UI/UX Designer
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Louise Donadieu
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Support Consultant
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1514222709107-a180c68d72b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Jeff Fisher
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Project Manager
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1602452920335-6a132309c7c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Sophia Harrington
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Project Manager
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
     </div>
+    <!-- End Grid -->
   </div>
-  <!-- End FAQ -->
+  <!-- End Team -->
 
   <!-- ========== FOOTER ========== -->
   <footer class="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
@@ -1405,6 +2481,14 @@
   </footer>
   <!-- ========== END FOOTER ========== -->
 
+  </div>
+
+  <div class="fixed bottom-4 right-4">
+    <a target="_blank" href="http://wa.me/+971566802871">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 48 48">
+        <path fill="#fff" d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z"></path><path fill="#fff" d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z"></path><path fill="#cfd8dc" d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z"></path><path fill="#40c351" d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z"></path><path fill="#fff" fill-rule="evenodd" d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z" clip-rule="evenodd"></path>
+      </svg>
+    </a>
   </div>
 </template>
   
