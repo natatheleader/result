@@ -5,19 +5,19 @@
     "src": "resources/css/app.css"
   },
   "resources/js/app.css": {
-    "file": "assets/app-0d232cc0.css",
+    "file": "assets/app-b44f4aba.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
     "assets": [
-      "assets/logo-e3655fc3.png",
+      "assets/logo-b23b614b.png",
       "assets/logo-a8b7d868.svg",
       "assets/illustration-73ed9678.svg"
     ],
     "css": [
-      "assets/app-0d232cc0.css"
+      "assets/app-b44f4aba.css"
     ],
-    "file": "assets/app-5e266b3f.js",
+    "file": "assets/app-d498140f.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
@@ -26,7 +26,7 @@
     "src": "resources/js/assets/images/illustration.svg"
   },
   "resources/js/assets/images/logo.png": {
-    "file": "assets/logo-e3655fc3.png",
+    "file": "assets/logo-b23b614b.png",
     "src": "resources/js/assets/images/logo.png"
   },
   "resources/js/assets/images/logo.svg": {
