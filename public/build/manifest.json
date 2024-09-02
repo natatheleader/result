@@ -5,24 +5,24 @@
     "src": "resources/css/app.css"
   },
   "resources/js/app.css": {
-    "file": "assets/app-b44f4aba.css",
+    "file": "assets/app-df1e471a.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
     "assets": [
       "assets/logo-b23b614b.png",
-      "assets/logo-a8b7d868.svg",
-      "assets/illustration-73ed9678.svg"
+      "assets/logo-9a88cec5.svg",
+      "assets/illustration-bbfd1da0.svg"
     ],
     "css": [
-      "assets/app-b44f4aba.css"
+      "assets/app-df1e471a.css"
     ],
-    "file": "assets/app-d498140f.js",
+    "file": "assets/app-ccf8516a.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/js/assets/images/illustration.svg": {
-    "file": "assets/illustration-73ed9678.svg",
+    "file": "assets/illustration-bbfd1da0.svg",
     "src": "resources/js/assets/images/illustration.svg"
   },
   "resources/js/assets/images/logo.png": {
@@ -30,7 +30,7 @@
     "src": "resources/js/assets/images/logo.png"
   },
   "resources/js/assets/images/logo.svg": {
-    "file": "assets/logo-a8b7d868.svg",
+    "file": "assets/logo-9a88cec5.svg",
     "src": "resources/js/assets/images/logo.svg"
   }
 }
