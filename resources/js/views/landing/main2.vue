@@ -1,291 +1,8 @@
 <template>
   <div>
-    <!-- ========== HEADER ========== -->
-  <header class="sticky top-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full border-b border-gray-200 bg-pink-400 dark:border-neutral-700">
-    <nav class="relative max-w-[85rem] w-full mx-auto md:flex md:items-center md:justify-between md:gap-3 py-2 px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center gap-x-1">
-        <a class="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80 text-white" href="#" aria-label="Brand"><img src="../../assets/images/logo.png" alt="logo" class="fill-current h-12 w-12 mr-2" width="80" height="80"><span>I Serena</span></a>
-        <!-- Collapse Button -->
-        <button type="button" class="hs-collapse-toggle md:hidden relative size-9 flex justify-center items-center font-medium text-[12px] rounded-lg border border-gray-200 text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" id="hs-header-base-collapse"  aria-expanded="false" aria-controls="hs-header-base" aria-label="Toggle navigation"  data-hs-collapse="#hs-header-base" >
-          <svg class="hs-collapse-open:hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
-          <svg class="hs-collapse-open:block shrink-0 hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
-          <span class="sr-only">Toggle navigation</span>
-        </button>
-        <!-- End Collapse Button -->
-      </div>
 
-      <!-- Collapse -->
-      <div id="hs-header-base" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block "  aria-labelledby="hs-header-base-collapse" >
-        <div class="overflow-hidden overflow-y-auto max-h-[75vh] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
-          <div class="py-2 md:py-0  flex flex-col md:flex-row md:items-center gap-0.5 md:gap-1">
-            <div class="grow">
-              <div class="flex flex-col md:flex-row md:justify-end md:items-center gap-0.5 md:gap-1">
-                <a class="p-2 flex items-center text-sm bg-gray-100 text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 bg-neutral-700 text-neutral-200 hover:bg-neutral-700 focus:bg-neutral-700" href="#" aria-current="page">
-                  <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-                  About
-                </a>
-
-                <!-- Dropdown -->
-                <!-- <div class="hs-dropdown [--strategy:static] md:[--strategy:fixed] [--adaptive:none] [--is-collapse:true] md:[--is-collapse:false] ">
-                  <button id="hs-header-base-dropdown" type="button" class="hs-dropdown-toggle w-full p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 dark:text-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-                    <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 2.5-2.5L3 5"/><path d="m3 19 2.5-2.5L3 14"/><path d="M10 6h11"/><path d="M10 12h11"/><path d="M10 18h11"/></svg>
-                    About
-                    <svg class="hs-dropdown-open:-rotate-180 md:hs-dropdown-open:rotate-0 duration-300 shrink-0 size-4 ms-auto md:ms-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-                  </button>
-
-                  <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 relative w-full md:w-52 hidden z-10 top-full ps-7 md:ps-0 md:bg-white md:rounded-lg md:shadow-md before:absolute before:-top-4 before:start-0 before:w-full before:h-5 md:after:hidden after:absolute after:top-1 after:start-[18px] after:w-0.5 after:h-[calc(100%-0.25rem)] after:bg-gray-100 dark:md:bg-neutral-800 dark:after:bg-neutral-700" role="menu" aria-orientation="vertical" aria-labelledby="hs-header-base-dropdown">
-                    <div class="py-1 md:px-1 space-y-0.5">
-                      <a class="p-2 md:px-3 flex items-center text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300" href="#">
-                        About
-                      </a>
-
-                      <div class="hs-dropdown [--strategy:static] md:[--strategy:absolute] [--adaptive:none] md:[--trigger:hover] [--is-collapse:true] md:[--is-collapse:false] relative">
-                        <button id="hs-header-base-dropdown-sub" type="button" class="hs-dropdown-toggle w-full flex justify-between items-center text-sm text-gray-800 rounded-lg p-2 md:px-3 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300">
-                          Sub Menu
-                          <svg class="hs-dropdown-open:-rotate-180 md:hs-dropdown-open:-rotate-90 md:-rotate-90 duration-300 ms-auto shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-                        </button>
-
-                        <div class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 relative md:w-48 hidden z-10 md:mt-2 md:!mx-[10px] md:top-0 md:end-full ps-7 md:ps-0 md:bg-white md:rounded-lg md:shadow-md dark:bg-neutral-800 dark:divide-neutral-700 before:hidden md:before:block before:absolute before:-end-5 before:top-0 before:h-full before:w-5 md:after:hidden after:absolute after:top-1 after:start-[18px] after:w-0.5 after:h-[calc(100%-0.25rem)] after:bg-gray-100 dark:md:bg-neutral-800 dark:after:bg-neutral-700" role="menu" aria-orientation="vertical" aria-labelledby="hs-header-base-dropdown-sub">
-                          <div class="p-1 space-y-1">
-                            <a class="p-2 md:px-3 flex items-center text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300" href="#">
-                              About
-                            </a>
-
-                            <a class="p-2 md:px-3 flex items-center text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300" href="#">
-                              Downloads
-                            </a>
-
-                            <a class="p-2 md:px-3 flex items-center text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300" href="#">
-                              Team Account
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-
-                      <a class="p-2 md:px-3 flex items-center text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300" href="#">
-                        Downloads
-                      </a>
-
-                      <a class="p-2 md:px-3 flex items-center text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:hover:text-neutral-300 dark:focus:bg-neutral-700 dark:focus:text-neutral-300" href="#">
-                        Team Account
-                      </a>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- End Dropdown -->
-
-                <a class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 text-neutral-200 hover:bg-neutral-700 focus:bg-neutral-700" href="#">
-                  <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                  Tips For Girls and Parents
-                </a>
-
-                <a class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 text-neutral-200 hover:bg-neutral-700 focus:bg-neutral-700" href="#">
-                  <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12h.01"/><path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><path d="M22 13a18.15 18.15 0 0 1-20 0"/><rect width="20" height="14" x="2" y="6" rx="2"/></svg>
-                  Tips for Woman
-                </a>
-
-                <a class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 text-neutral-200 hover:bg-neutral-700 focus:bg-neutral-700" href="#">
-                  <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
-                  Menustral Cicle calculator
-                </a>
-
-                <a class="p-2 flex items-center text-sm text-gray-800 hover:bg-gray-100 rounded-lg focus:outline-none focus:bg-gray-100 text-neutral-200 hover:bg-neutral-700 focus:bg-neutral-700" href="#">
-                  <svg class="shrink-0 size-4 me-3 md:me-2 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
-                  Our Products
-                </a>
-
-                
-
-                <div class="hs-dropdown [--placement:top-left] relative inline-flex">
-                  <button id="hs-footer-language-dropdown" type="button" class="hs-dropdown-toggle py-2 px-3 inline-flex items-center gap-x-2 text-sm rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-                    <svg class="size-3 rounded-full" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us1" viewBox="0 0 512 512">
-                      <g fill-rule="evenodd">
-                        <g stroke-width="1pt">
-                          <path fill="#bd3d44" d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/>
-                          <path fill="#fff" d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/>
-                        </g>
-                        <path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)"/>
-                        <path fill="#fff" d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z" transform="scale(3.9385)"/>
-                      </g>
-                    </svg>
-                    English (US)
-                    <svg class="hs-dropdown-open:rotate-180 shrink-0 size-4 text-gray-500 text-neutral-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
-                  </button>
-
-                  <div class="hs-dropdown-menu w-40 transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden z-10 bg-white shadow-md rounded-lg p-2 bg-neutral-800 border border-neutral-700 divide-neutral-700" role="menu" aria-orientation="vertical" aria-labelledby="hs-footer-language-dropdown">
-                    <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 text-neutral-400 hover:bg-neutral-700 hover:text-neutral-300 focus:bg-neutral-700 focus:text-neutral-300" href="#">
-                      <svg class="size-3.5 rounded-full" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512">
-                        <g fill-rule="evenodd">
-                          <g stroke-width="1pt">
-                            <path fill="#bd3d44" d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/>
-                            <path fill="#fff" d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z" transform="scale(3.9385)"/>
-                          </g>
-                          <path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)"/>
-                          <path fill="#fff" d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z" transform="scale(3.9385)"/>
-                        </g>
-                      </svg>
-                      English (US)
-                    </a>
-                    <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 text-neutral-400 hover:bg-neutral-700 hover:text-neutral-300 focus:bg-neutral-700 focus:text-neutral-300" href="#">
-                      <svg class="size-3.5 rounded-full" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-arab" width="32" height="32" viewBox="0 0 32 32">
-                        <path d="M5,4h6V28H5c-2.208,0-4-1.792-4-4V8c0-2.208,1.792-4,4-4Z" fill="#ea3323"></path>
-                        <path d="M10,20v8H27c2.209,0,4-1.791,4-4v-4H10Z"></path>
-                        <path fill="#fff" d="M10 11H31V21H10z"></path>
-                        <path d="M27,4H10V12H31v-4c0-2.209-1.791-4-4-4Z" fill="#317234"></path>
-                        <path d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z" opacity=".15"></path>
-                        <path d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z" fill="#fff" opacity=".2"></path>
-                      </svg>
-                      عربي
-                    </a>
-                    <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 text-neutral-400 hover:bg-neutral-700 hover:text-neutral-300 focus:bg-neutral-700 focus:text-neutral-300" href="#">
-                      <svg class="size-3 rounded-full" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512">
-                        <path fill="#ffce00" d="M0 341.3h512V512H0z"/>
-                        <path d="M0 0h512v170.7H0z"/>
-                        <path fill="#d00" d="M0 170.7h512v170.6H0z"/>
-                      </svg>
-                      Deutsch
-                    </a>
-                    <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 text-neutral-400 hover:bg-neutral-700 hover:text-neutral-300 focus:bg-neutral-700 focus:text-neutral-300" href="#">
-                      <svg class="size-3 rounded-full" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-dk" viewBox="0 0 512 512">
-                        <path fill="#c8102e" d="M0 0h512.1v512H0z"/>
-                        <path fill="#fff" d="M144 0h73.1v512H144z"/>
-                        <path fill="#fff" d="M0 219.4h512.1v73.2H0z"/>
-                      </svg>
-                      Dansk
-                    </a>
-                    <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 text-neutral-400 hover:bg-neutral-700 hover:text-neutral-300 focus:bg-neutral-700 focus:text-neutral-300" href="#">
-                      <svg class="size-3 rounded-full" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-it" viewBox="0 0 512 512">
-                        <g fill-rule="evenodd" stroke-width="1pt">
-                          <path fill="#fff" d="M0 0h512v512H0z"/>
-                          <path fill="#009246" d="M0 0h170.7v512H0z"/>
-                          <path fill="#ce2b37" d="M341.3 0H512v512H341.3z"/>
-                        </g>
-                      </svg>
-                      Italiano
-                    </a>
-                    <a class="flex items-center gap-x-2 py-2 px-3 rounded-lg text-sm text-gray-800 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 text-neutral-400 hover:bg-neutral-700 hover:text-neutral-300 focus:bg-neutral-700 focus:text-neutral-300" href="#">
-                      <svg class="size-3 rounded-full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn" viewBox="0 0 512 512">
-                        <defs>
-                          <path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z"/>
-                        </defs>
-                        <path fill="#de2910" d="M0 0h512v512H0z"/>
-                        <use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)" xlink:href="#a"/>
-                        <use width="30" height="20" transform="rotate(-121 142.6 -47) scale(25.5827)" xlink:href="#a"/>
-                        <use width="30" height="20" transform="rotate(-98.1 198 -82) scale(25.6)" xlink:href="#a"/>
-                        <use width="30" height="20" transform="rotate(-74 272.4 -114) scale(25.6137)" xlink:href="#a"/>
-                        <use width="30" height="20" transform="matrix(16 -19.968 19.968 16 256 230.4)" xlink:href="#a"/>
-                      </svg>
-                      中文 (繁體)
-                    </a>
-                  </div>
-                </div>
-
-                <input type="search" class="bg-purple-white shadow rounded-3xl border-0 p-3" placeholder="Search by name...">
-                
-              </div>
-            </div>
-
-            <!-- <div class="my-2 md:my-0 md:mx-2">
-              <div class="w-full h-px md:w-px md:h-4 bg-gray-100 md:bg-gray-300 dark:bg-neutral-700"></div>
-            </div> -->
-
-            <!-- Button Group -->
-            <!-- <div class=" flex flex-wrap items-center gap-x-1.5">
-              <a class="py-[7px] px-2.5 inline-flex items-center font-medium text-sm rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 focus:outline-none focus:bg-gray-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700" href="#">
-                Sign in
-              </a>
-              <a class="py-2 px-2.5 inline-flex items-center font-medium text-sm rounded-lg bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:bg-blue-600" href="#">
-                Get started
-              </a>
-            </div> -->
-            <!-- End Button Group -->
-          </div>
-        </div>
-      </div>
-      <!-- End Collapse -->
-    </nav>
-  </header>
-  <!-- ========== END HEADER ========== -->
-
-  <!-- Slider -->
-  <div class="px-1 my-2 py-10">
-    <div data-hs-carousel='{
-        "loadingClasses": "opacity-0"
-      }' class="relative">
-      <div class="hs-carousel relative overflow-hidden w-full h-[25rem] bg-gray-100 rounded-2xl dark:bg-neutral-800">
-        <div class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
-          <!-- Item -->
-          <div class="hs-carousel-slide">
-            <div class="h-[25rem]  flex flex-col bg-[url('https://images.unsplash.com/flagged/photo-1572644973628-e9be84915d59?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat">
-              <div class="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
-                <span class="block text-white">Banner 1: Lalibela</span>
-                <span class="block text-white text-xl md:text-3xl">Rock-hewn churches in Ethiopia. A UNESCO World Heritage Site.</span>
-                <div class="mt-5">
-                  <a class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl bg-white border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" href="#">
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Item -->
-
-          <!-- Item -->
-          <div class="hs-carousel-slide">
-            <div class="h-[25rem] flex flex-col bg-[url('https://images.unsplash.com/photo-1516533075015-a3838414c3ca?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat">
-              <div class="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
-                <span class="block text-white">Banner 2: Afar Dalol</span>
-                <span class="block text-white text-xl md:text-3xl">A remote, otherworldly volcanic landscape in Ethiopia.</span>
-                <div class="mt-5">
-                  <a class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl bg-white border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" href="#">
-                    Read More
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Item -->
-
-          <!-- Item -->
-          <!-- <div class="hs-carousel-slide">
-            <div class="h-[30rem] md:h-[calc(100vh-106px)]  flex flex-col bg-[url('https://images.unsplash.com/photo-1629666451094-8908989cae90?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center bg-no-repeat">
-              <div class="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
-                <span class="block text-white">Grumpy</span>
-                <span class="block text-white text-xl md:text-3xl">Bringing Art to everything</span>
-                <div class="mt-5">
-                  <a class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl bg-white border border-transparent text-black hover:bg-gray-100 focus:outline-none focus:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none" href="#">
-                    Read Case Studies
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div> -->
-          <!-- End Item -->
-        </div>
-      </div>
-
-      <!-- Arrows -->
-      <button type="button" class="hs-carousel-prev hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-12 h-full text-black hover:bg-white/20 rounded-s-2xl focus:outline-none focus:bg-white/20">
-        <span class="text-2xl" aria-hidden="true">
-          <svg class="shrink-0 size-3.5 md:size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
-          </svg>
-        </span>
-        <span class="sr-only">Previous</span>
-      </button>
-
-      <button type="button" class="hs-carousel-next hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-12 h-full text-black hover:bg-white/20 rounded-e-2xl focus:outline-none focus:bg-white/20">
-        <span class="sr-only">Next</span>
-        <span class="text-2xl" aria-hidden="true">
-          <svg class="shrink-0 size-3.5 md:size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
-          </svg>
-        </span>
-      </button>
-      <!-- End Arrows -->
-    </div>
-  </div>
-  <!-- End Slider -->
+  <MainMenu />
+  <Banner />
 
   <!-- Team -->
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
@@ -318,7 +35,7 @@
     <!-- Grid -->
     <div class="overflow-hidden whitespace-nowrap">
       <div class="inline-block w-96 h-100 mx-10">
-        <iframe class="rounded-xl mx-auto" width="420" height="315"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="420" height="315"
           src="https://www.youtube.com/embed/2xW9mTStyhM">
         </iframe>
         <!-- <video class="rounded-xl mx-auto" width="320" height="240" controls>
@@ -338,7 +55,7 @@
       <!-- End Col -->
 
       <div class="inline-block w-96 h-100 mx-10">
-        <iframe class="rounded-xl mx-auto" width="420" height="315"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="420" height="315"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
@@ -354,7 +71,7 @@
       <!-- End Col -->
 
       <div class="inline-block w-96 h-100 mx-10">
-        <iframe class="rounded-xl mx-auto" width="420" height="315"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="420" height="315"
           src="https://www.youtube.com/embed/haMue6QUhlQ">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
@@ -404,7 +121,7 @@
     <!-- Grid -->
     <div class="overflow-x-auto whitespace-nowrap">
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <div class="mt-2 sm:mt-4">
@@ -419,23 +136,7 @@
       <!-- End Col -->
 
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
-          src="https://www.youtube.com/embed/HBq_zOzhTqw">
-        </iframe>
-        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <div class="mt-2 sm:mt-4">
-          <h3 class="font-medium text-gray-800 text-lg text-white">
-            David Forren
-          </h3>
-          <p class="text-gray-600 text-base text-white">
-            Founder / CEO
-          </p>
-        </div>
-      </div>
-      <!-- End Col -->
-
-      <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
@@ -451,7 +152,7 @@
       <!-- End Col -->
 
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
@@ -467,150 +168,7 @@
       <!-- End Col -->
 
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
-          src="https://www.youtube.com/embed/HBq_zOzhTqw">
-        </iframe>
-        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <div class="mt-2 sm:mt-4">
-          <h3 class="font-medium text-gray-800 text-lg text-white">
-            David Forren
-          </h3>
-          <p class="text-gray-600 text-base text-white">
-            Founder / CEO
-          </p>
-        </div>
-      </div>
-      <!-- End Col -->
-
-      <!-- <div class="text-center">
-        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
-        <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Maria Powers
-          </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            Director of sales
-          </p>
-        </div>
-      </div> -->
-      <!-- End Col -->
-
-      <!-- <div class="text-center">
-        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
-        <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Delia Pawelke
-          </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            Front-end Developer
-          </p>
-        </div>
-      </div> -->
-      <!-- End Col -->
-
-      <!-- <div class="text-center">
-        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1624224971170-2f84fed5eb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
-        <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Tom Lowry
-          </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            UI/UX Designer
-          </p>
-        </div>
-      </div> -->
-      <!-- End Col -->
-
-      <!-- <div class="text-center">
-        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
-        <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Louise Donadieu
-          </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            Support Consultant
-          </p>
-        </div>
-      </div> -->
-      <!-- End Col -->
-
-      <!-- <div class="text-center">
-        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1514222709107-a180c68d72b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
-        <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Jeff Fisher
-          </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            Project Manager
-          </p>
-        </div>
-      </div> -->
-      <!-- End Col -->
-
-      <!-- <div class="text-center">
-        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1602452920335-6a132309c7c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
-        <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Sophia Harrington
-          </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            Project Manager
-          </p>
-        </div>
-      </div> -->
-      <!-- End Col -->
-    </div>
-    <!-- End Grid -->
-  </div>
-  <!-- End Team -->
-
-  <!-- Team -->
-  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-    <!-- Title -->
-    <div class="intro-x flex items-center h-10 text-white">
-      <h2 class="text-3xl font-medium truncate mr-auto">
-        Important Notes
-      </h2>
-      <button
-        data-carousel="important-notes"
-        data-target="prev"
-        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
-        @click="prevImportantNotes"
-      >
-        <ChevronLeftIcon class="w-4 h-4" />
-      </button>
-      <button
-        data-carousel="important-notes"
-        data-target="next"
-        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
-        @click="nextImportantNotes"
-      >
-        <ChevronRightIcon class="w-4 h-4" />
-      </button>
-
-      See More >
-    </div>
-    <!-- End Title -->
-
-    <!-- Grid -->
-    <div class="overflow-x-auto whitespace-nowrap">
-      <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
-          src="https://www.youtube.com/embed/HBq_zOzhTqw">
-        </iframe>
-        <div class="mt-2 sm:mt-4">
-          <h3 class="font-medium text-gray-800 text-lg text-white">
-            David Forren
-          </h3>
-          <p class="text-gray-600 text-base text-white">
-            Founder / CEO
-          </p>
-        </div>
-      </div>
-      <!-- End Col -->
-
-      <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
@@ -626,39 +184,7 @@
       <!-- End Col -->
 
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
-          src="https://www.youtube.com/embed/HBq_zOzhTqw">
-        </iframe>
-        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <div class="mt-2 sm:mt-4">
-          <h3 class="font-medium text-gray-800 text-lg text-white">
-            David Forren
-          </h3>
-          <p class="text-gray-600 text-base text-white">
-            Founder / CEO
-          </p>
-        </div>
-      </div>
-      <!-- End Col -->
-
-      <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
-          src="https://www.youtube.com/embed/HBq_zOzhTqw">
-        </iframe>
-        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <div class="mt-2 sm:mt-4">
-          <h3 class="font-medium text-gray-800 text-lg text-white">
-            David Forren
-          </h3>
-          <p class="text-gray-600 text-base text-white">
-            Founder / CEO
-          </p>
-        </div>
-      </div>
-      <!-- End Col -->
-
-      <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
@@ -786,7 +312,7 @@
     <!-- Grid -->
     <div class="overflow-x-auto whitespace-nowrap">
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <div class="mt-2 sm:mt-4">
@@ -801,23 +327,7 @@
       <!-- End Col -->
 
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
-          src="https://www.youtube.com/embed/HBq_zOzhTqw">
-        </iframe>
-        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <div class="mt-2 sm:mt-4">
-          <h3 class="font-medium text-gray-800 text-lg text-white">
-            David Forren
-          </h3>
-          <p class="text-gray-600 text-base text-white">
-            Founder / CEO
-          </p>
-        </div>
-      </div>
-      <!-- End Col -->
-
-      <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
@@ -833,7 +343,7 @@
       <!-- End Col -->
 
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
@@ -849,150 +359,7 @@
       <!-- End Col -->
 
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
-          src="https://www.youtube.com/embed/HBq_zOzhTqw">
-        </iframe>
-        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <div class="mt-2 sm:mt-4">
-          <h3 class="font-medium text-gray-800 text-lg text-white">
-            David Forren
-          </h3>
-          <p class="text-gray-600 text-base text-white">
-            Founder / CEO
-          </p>
-        </div>
-      </div>
-      <!-- End Col -->
-
-      <!-- <div class="text-center">
-        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
-        <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Maria Powers
-          </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            Director of sales
-          </p>
-        </div>
-      </div> -->
-      <!-- End Col -->
-
-      <!-- <div class="text-center">
-        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
-        <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Delia Pawelke
-          </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            Front-end Developer
-          </p>
-        </div>
-      </div> -->
-      <!-- End Col -->
-
-      <!-- <div class="text-center">
-        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1624224971170-2f84fed5eb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
-        <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Tom Lowry
-          </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            UI/UX Designer
-          </p>
-        </div>
-      </div> -->
-      <!-- End Col -->
-
-      <!-- <div class="text-center">
-        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
-        <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Louise Donadieu
-          </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            Support Consultant
-          </p>
-        </div>
-      </div> -->
-      <!-- End Col -->
-
-      <!-- <div class="text-center">
-        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1514222709107-a180c68d72b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
-        <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Jeff Fisher
-          </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            Project Manager
-          </p>
-        </div>
-      </div> -->
-      <!-- End Col -->
-
-      <!-- <div class="text-center">
-        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1602452920335-6a132309c7c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
-        <div class="mt-2 sm:mt-4">
-          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-            Sophia Harrington
-          </h3>
-          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
-            Project Manager
-          </p>
-        </div>
-      </div> -->
-      <!-- End Col -->
-    </div>
-    <!-- End Grid -->
-  </div>
-  <!-- End Team -->
-
-  <!-- Team -->
-  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-    <!-- Title -->
-    <div class="intro-x flex items-center h-10 text-white">
-      <h2 class="text-3xl font-medium truncate mr-auto">
-        Important Notes
-      </h2>
-      <button
-        data-carousel="important-notes"
-        data-target="prev"
-        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
-        @click="prevImportantNotes"
-      >
-        <ChevronLeftIcon class="w-4 h-4" />
-      </button>
-      <button
-        data-carousel="important-notes"
-        data-target="next"
-        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
-        @click="nextImportantNotes"
-      >
-        <ChevronRightIcon class="w-4 h-4" />
-      </button>
-
-      See More >
-    </div>
-    <!-- End Title -->
-
-    <!-- Grid -->
-    <div class="overflow-x-auto whitespace-nowrap">
-      <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
-          src="https://www.youtube.com/embed/HBq_zOzhTqw">
-        </iframe>
-        <div class="mt-2 sm:mt-4">
-          <h3 class="font-medium text-gray-800 text-lg text-white">
-            David Forren
-          </h3>
-          <p class="text-gray-600 text-base text-white">
-            Founder / CEO
-          </p>
-        </div>
-      </div>
-      <!-- End Col -->
-
-      <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
@@ -1008,39 +375,7 @@
       <!-- End Col -->
 
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
-          src="https://www.youtube.com/embed/HBq_zOzhTqw">
-        </iframe>
-        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <div class="mt-2 sm:mt-4">
-          <h3 class="font-medium text-gray-800 text-lg text-white">
-            David Forren
-          </h3>
-          <p class="text-gray-600 text-base text-white">
-            Founder / CEO
-          </p>
-        </div>
-      </div>
-      <!-- End Col -->
-
-      <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
-          src="https://www.youtube.com/embed/HBq_zOzhTqw">
-        </iframe>
-        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <div class="mt-2 sm:mt-4">
-          <h3 class="font-medium text-gray-800 text-lg text-white">
-            David Forren
-          </h3>
-          <p class="text-gray-600 text-base text-white">
-            Founder / CEO
-          </p>
-        </div>
-      </div>
-      <!-- End Col -->
-
-      <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
@@ -1168,7 +503,7 @@
     <!-- Grid -->
     <div class="overflow-x-auto whitespace-nowrap">
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <div class="mt-2 sm:mt-4">
@@ -1183,23 +518,7 @@
       <!-- End Col -->
 
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
-          src="https://www.youtube.com/embed/HBq_zOzhTqw">
-        </iframe>
-        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <div class="mt-2 sm:mt-4">
-          <h3 class="font-medium text-gray-800 text-lg text-white">
-            David Forren
-          </h3>
-          <p class="text-gray-600 text-base text-white">
-            Founder / CEO
-          </p>
-        </div>
-      </div>
-      <!-- End Col -->
-
-      <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
@@ -1215,7 +534,7 @@
       <!-- End Col -->
 
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
@@ -1231,7 +550,405 @@
       <!-- End Col -->
 
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Maria Powers
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Director of sales
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Delia Pawelke
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Front-end Developer
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1624224971170-2f84fed5eb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Tom Lowry
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            UI/UX Designer
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Louise Donadieu
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Support Consultant
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1514222709107-a180c68d72b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Jeff Fisher
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Project Manager
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1602452920335-6a132309c7c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Sophia Harrington
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Project Manager
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Team -->
+
+  <!-- Team -->
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <!-- Title -->
+    <div class="intro-x flex items-center h-10 text-white">
+      <h2 class="text-3xl font-medium truncate mr-auto">
+        Important Notes
+      </h2>
+      <button
+        data-carousel="important-notes"
+        data-target="prev"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="prevImportantNotes"
+      >
+        <ChevronLeftIcon class="w-4 h-4" />
+      </button>
+      <button
+        data-carousel="important-notes"
+        data-target="next"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="nextImportantNotes"
+      >
+        <ChevronRightIcon class="w-4 h-4" />
+      </button>
+
+      See More >
+    </div>
+    <!-- End Title -->
+
+    <!-- Grid -->
+    <div class="overflow-x-auto whitespace-nowrap">
+      <div class="inline-block h-100 mx-5">
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Maria Powers
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Director of sales
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Delia Pawelke
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Front-end Developer
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1624224971170-2f84fed5eb5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Tom Lowry
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            UI/UX Designer
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Louise Donadieu
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Support Consultant
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1514222709107-a180c68d72b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Jeff Fisher
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Project Manager
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+
+      <!-- <div class="text-center">
+        <img class="rounded-xl sm:size-48 lg:size-60 mx-auto" src="https://images.unsplash.com/photo-1602452920335-6a132309c7c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar">
+        <div class="mt-2 sm:mt-4">
+          <h3 class="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
+            Sophia Harrington
+          </h3>
+          <p class="text-xs text-gray-600 sm:text-sm lg:text-base dark:text-neutral-400">
+            Project Manager
+          </p>
+        </div>
+      </div> -->
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Team -->
+
+  <!-- Team -->
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <!-- Title -->
+    <div class="intro-x flex items-center h-10 text-white">
+      <h2 class="text-3xl font-medium truncate mr-auto">
+        Important Notes
+      </h2>
+      <button
+        data-carousel="important-notes"
+        data-target="prev"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="prevImportantNotes"
+      >
+        <ChevronLeftIcon class="w-4 h-4" />
+      </button>
+      <button
+        data-carousel="important-notes"
+        data-target="next"
+        class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2"
+        @click="nextImportantNotes"
+      >
+        <ChevronRightIcon class="w-4 h-4" />
+      </button>
+
+      See More >
+    </div>
+    <!-- End Title -->
+
+    <!-- Grid -->
+    <div class="overflow-x-auto whitespace-nowrap">
+      <div class="inline-block h-100 mx-5">
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
@@ -1843,7 +1560,7 @@ Market. Furthermore, we share our evaluations with scientists, healthcare provid
     <!-- Grid -->
     <div class="overflow-hidden whitespace-nowrap">
       <div class="inline-block w-96 h-100 mx-10">
-        <iframe class="rounded-xl mx-auto" width="420" height="315"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="420" height="315"
           src="https://www.youtube.com/embed/2xW9mTStyhM">
         </iframe>
         <!-- <video class="rounded-xl mx-auto" width="320" height="240" controls>
@@ -1863,7 +1580,7 @@ Market. Furthermore, we share our evaluations with scientists, healthcare provid
       <!-- End Col -->
 
       <div class="inline-block w-96 h-100 mx-10">
-        <iframe class="rounded-xl mx-auto" width="420" height="315"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="420" height="315"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
@@ -1879,7 +1596,7 @@ Market. Furthermore, we share our evaluations with scientists, healthcare provid
       <!-- End Col -->
 
       <div class="inline-block w-96 h-100 mx-10">
-        <iframe class="rounded-xl mx-auto" width="420" height="315"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="420" height="315"
           src="https://www.youtube.com/embed/haMue6QUhlQ">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
@@ -1929,7 +1646,7 @@ Market. Furthermore, we share our evaluations with scientists, healthcare provid
     <!-- Grid -->
     <div class="overflow-x-auto whitespace-nowrap">
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <div class="mt-2 sm:mt-4">
@@ -1944,23 +1661,7 @@ Market. Furthermore, we share our evaluations with scientists, healthcare provid
       <!-- End Col -->
 
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
-          src="https://www.youtube.com/embed/HBq_zOzhTqw">
-        </iframe>
-        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <div class="mt-2 sm:mt-4">
-          <h3 class="font-medium text-gray-800 text-lg text-white">
-            David Forren
-          </h3>
-          <p class="text-gray-600 text-base text-white">
-            Founder / CEO
-          </p>
-        </div>
-      </div>
-      <!-- End Col -->
-
-      <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
@@ -1976,7 +1677,7 @@ Market. Furthermore, we share our evaluations with scientists, healthcare provid
       <!-- End Col -->
 
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
@@ -1992,7 +1693,23 @@ Market. Furthermore, we share our evaluations with scientists, healthcare provid
       <!-- End Col -->
 
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
@@ -2120,7 +1837,7 @@ Market. Furthermore, we share our evaluations with scientists, healthcare provid
     <!-- Grid -->
     <div class="overflow-x-auto whitespace-nowrap">
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <div class="mt-2 sm:mt-4">
@@ -2135,23 +1852,7 @@ Market. Furthermore, we share our evaluations with scientists, healthcare provid
       <!-- End Col -->
 
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
-          src="https://www.youtube.com/embed/HBq_zOzhTqw">
-        </iframe>
-        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
-        <div class="mt-2 sm:mt-4">
-          <h3 class="font-medium text-gray-800 text-lg text-white">
-            David Forren
-          </h3>
-          <p class="text-gray-600 text-base text-white">
-            Founder / CEO
-          </p>
-        </div>
-      </div>
-      <!-- End Col -->
-
-      <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
@@ -2167,7 +1868,7 @@ Market. Furthermore, we share our evaluations with scientists, healthcare provid
       <!-- End Col -->
 
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
@@ -2183,7 +1884,23 @@ Market. Furthermore, we share our evaluations with scientists, healthcare provid
       <!-- End Col -->
 
       <div class="inline-block h-100 mx-5">
-        <iframe class="rounded-xl mx-auto" width="200" height="150"
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
+          src="https://www.youtube.com/embed/HBq_zOzhTqw">
+        </iframe>
+        <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
+        <div class="mt-2 sm:mt-4">
+          <h3 class="font-medium text-gray-800 text-lg text-white">
+            David Forren
+          </h3>
+          <p class="text-gray-600 text-base text-white">
+            Founder / CEO
+          </p>
+        </div>
+      </div>
+      <!-- End Col -->
+
+      <div class="inline-block h-100 mx-5">
+        <iframe allow="fullscreen;" class="rounded-xl mx-auto" width="200" height="150"
           src="https://www.youtube.com/embed/HBq_zOzhTqw">
         </iframe>
         <!-- <img class="rounded-xl mx-auto" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Avatar"> -->
@@ -2285,64 +2002,59 @@ Market. Furthermore, we share our evaluations with scientists, healthcare provid
     <!-- Grid -->
     <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-10">
       <div class="col-span-full hidden lg:col-span-1 lg:block">
-        <a class="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80 text-white" href="#" aria-label="Result">Result</a>
-        <p class="mt-3 text-xs sm:text-sm text-gray-600 text-neutral-400">© 2024 Result.</p>
-      </div>
+        <!--  <a class="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80 text-white" href="#" aria-label="Result">Result</a>
+        <p class="mt-3 text-xs sm:text-sm text-gray-600 text-neutral-400">© 2024 Result.</p>-->
+        <h4 class="text-xs font-semibold text-gray-900 uppercase text-neutral-100">SHOP MENSTRUAL PADS</h4>
+
+        <div class="mt-3 grid space-y-3 text-sm">
+          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-200 hover:text-neutral-200 focus:text-neutral-200" href="/products">Infinity Pads with FlexFoam</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-200 hover:text-neutral-200 focus:text-neutral-200" href="/products">Ultra Thin Pads</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-200 hover:text-neutral-200 focus:text-neutral-200" href="/products">Maxi Pads</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-200 hover:text-neutral-200 focus:text-neutral-200" href="/products">Overnight Pads</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-200 hover:text-neutral-200 focus:text-neutral-200" href="/products">Special Pads for Teens</a></p>
+        </div>
+      </div> 
       <!-- End Col -->
 
       <div>
-        <h4 class="text-xs font-semibold text-gray-900 uppercase text-neutral-100">Product</h4>
+        <h4 class="text-xs font-semibold text-gray-900 uppercase text-neutral-100">SHOP DAILY LINERS</h4>
 
         <div class="mt-3 grid space-y-3 text-sm">
-          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Pricing</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Changelog</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Docs</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Download</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-200 hover:text-neutral-200 focus:text-neutral-200" href="#">Regular Liners</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-200 hover:text-neutral-200 focus:text-neutral-200" href="#">Thin Liners</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-200 hover:text-neutral-200 focus:text-neutral-200" href="#">Long Liners</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-200 hover:text-neutral-200 focus:text-neutral-200" href="#">Special Liners for Teens</a></p>
         </div>
       </div>
       <!-- End Col -->
 
       <div>
-        <h4 class="text-xs font-semibold text-gray-900 uppercase text-neutral-100">Company</h4>
+        <h4 class="text-xs font-semibold text-gray-900 uppercase text-neutral-100">MORE</h4>
 
         <div class="mt-3 grid space-y-3 text-sm">
-          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">About us</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Blog</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Careers</a> <span class="inline text-blue-600 text-blue-500">— We're hiring</span></p>
-          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Customers</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Newsroom</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Sitemap</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-200 hover:text-neutral-200 focus:text-neutral-200" href="#">Tips & Advice</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-200 hover:text-neutral-200 focus:text-neutral-200" href="#">Period Calculator</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-200 hover:text-neutral-200 focus:text-neutral-200" href="#">Offers</a></p>
         </div>
       </div>
       <!-- End Col -->
 
       <div>
-        <h4 class="text-xs font-semibold text-gray-900 uppercase text-neutral-100">Resources</h4>
+        <h4 class="text-xs font-semibold text-gray-900 uppercase text-neutral-100">ABOUT US</h4>
 
         <div class="mt-3 grid space-y-3 text-sm">
-          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Community</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Help & Support</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">eBook</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">What's New</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Status</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-200 hover:text-neutral-200 focus:text-neutral-200" href="#">We Care About Your Safety</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-200 hover:text-neutral-200 focus:text-neutral-200" href="#">We Care About the Environment</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-200 hover:text-neutral-200 focus:text-neutral-200" href="#">We Care About All Women & Girls</a></p>
         </div>
       </div>
       <!-- End Col -->
 
       <div>
-        <h4 class="text-xs font-semibold text-gray-900 uppercase text-neutral-100">Developers</h4>
+        <h4 class="text-xs font-semibold text-gray-900 uppercase text-neutral-100">HELP & SUPPORT</h4>
 
         <div class="mt-3 grid space-y-3 text-sm">
-          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Test</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Status</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Imports</a> <span class="inline text-blue-600 text-blue-500">— New</span></p>
-        </div>
-
-        <h4 class="mt-7 text-xs font-semibold text-gray-900 uppercase text-neutral-100">Industries</h4>
-
-        <div class="mt-3 grid space-y-3 text-sm">
-          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Financial Services</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Education</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-200 hover:text-neutral-200 focus:text-neutral-200" href="#">Contact Us</a></p>
         </div>
       </div>
       <!-- End Col -->
@@ -2352,8 +2064,12 @@ Market. Furthermore, we share our evaluations with scientists, healthcare provid
     <div class="pt-5 mt-5 border-t border-gray-100 border-neutral-700">
       <div class="sm:flex sm:justify-between sm:items-center">
         <div class="flex flex-wrap items-center gap-3">
+          <div class="col-span-full hidden lg:col-span-1 lg:block">
+            <a class="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80 text-white" href="#" aria-label="I Serena">I Serena</a>
+            <p class="mt-3 text-xs sm:text-sm text-gray-600 text-neutral-400">© 2024 I Serena.</p>
+          </div>
           <!-- Language Dropdown -->
-          <div class="hs-dropdown [--placement:top-left] relative inline-flex">
+          <!-- <div class="hs-dropdown [--placement:top-left] relative inline-flex">
             <button id="hs-footer-language-dropdown" type="button" class="hs-dropdown-toggle py-2 px-3 inline-flex items-center gap-x-2 text-sm rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
               <svg class="size-3 rounded-full" xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us1" viewBox="0 0 512 512">
                 <g fill-rule="evenodd">
@@ -2424,56 +2140,22 @@ Market. Furthermore, we share our evaluations with scientists, healthcare provid
                 中文 (繁體)
               </a>
             </div>
-          </div>
+          </div> -->
           <!-- End Language Dropdown -->
 
+          <!-- <div class="space-x-4 text-sm">
+            <a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Terms</a>
+            <a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Privacy</a>
+            <a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Status</a>
+          </div> -->
+        </div>
+
+        <div class="flex flex-wrap justify-between items-center gap-3">
           <div class="space-x-4 text-sm">
             <a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Terms</a>
             <a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Privacy</a>
             <a class="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-400 hover:text-neutral-200 focus:text-neutral-200" href="#">Status</a>
           </div>
-        </div>
-
-        <div class="flex flex-wrap justify-between items-center gap-3">
-          <div class="mt-3 sm:hidden">
-            <a class="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80 text-white" href="#" aria-label="Result">Result</a>
-            <p class="mt-1 text-xs sm:text-sm text-gray-600 text-neutral-400">© 2022 Result.</p>
-          </div>
-
-          <!-- Social Brands -->
-          <div class="space-x-4">
-            <a class="inline-block text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-500 hover:text-neutral-200 focus:text-neutral-200" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 24 24">
-                <path d="M 8 3 C 5.25 3 3 5.25 3 8 L 3 16 C 3 18.75 5.25 21 8 21 L 11.832031 21 A 1.0001 1.0001 0 0 0 12.158203 21 L 16 21 C 18.75 21 21 18.75 21 16 L 21 8 C 21 5.25 18.75 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.668 5 19 6.332 19 8 L 19 16 C 19 17.668 17.668 19 16 19 L 13 19 L 13 14 L 15 14 A 1.0001 1.0001 0 1 0 15 12 L 13 12 L 13 11 C 13 10.43497 13.43497 10 14 10 L 15 10 A 1.0001 1.0001 0 1 0 15 8 L 14 8 C 12.35503 8 11 9.3550302 11 11 L 11 12 L 10 12 A 1.0001 1.0001 0 1 0 10 14 L 11 14 L 11 19 L 8 19 C 6.332 19 5 17.668 5 16 L 5 8 C 5 6.332 6.332 5 8 5 z"></path>
-              </svg>
-            </a>
-            <a class="inline-block text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-500 hover:text-neutral-200 focus:text-neutral-200" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 48 48">
-                <path d="M 15 4 C 8.9365932 4 4 8.9365932 4 15 L 4 33 C 4 39.063407 8.9365932 44 15 44 L 33 44 C 39.063407 44 44 39.063407 44 33 L 44 15 C 44 8.9365932 39.063407 4 33 4 L 15 4 z M 15 6 L 33 6 C 37.982593 6 42 10.017407 42 15 L 42 33 C 42 37.982593 37.982593 42 33 42 L 15 42 C 10.017407 42 6 37.982593 6 33 L 6 15 C 6 10.017407 10.017407 6 15 6 z M 35 11 C 33.895 11 33 11.895 33 13 C 33 14.105 33.895 15 35 15 C 36.105 15 37 14.105 37 13 C 37 11.895 36.105 11 35 11 z M 24 14 C 18.488666 14 14 18.488666 14 24 C 14 29.511334 18.488666 34 24 34 C 29.511334 34 34 29.511334 34 24 C 34 18.488666 29.511334 14 24 14 z M 24 16 C 28.430666 16 32 19.569334 32 24 C 32 28.430666 28.430666 32 24 32 C 19.569334 32 16 28.430666 16 24 C 16 19.569334 19.569334 16 24 16 z"></path>
-              </svg>
-            </a>
-            <a class="inline-block text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-500 hover:text-neutral-200 focus:text-neutral-200" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 48 48">
-                <path d="M 11.5 6 C 8.4802259 6 6 8.4802259 6 11.5 A 1.50015 1.50015 0 1 0 9 11.5 C 9 10.101774 10.101774 9 11.5 9 L 36.5 9 C 37.898226 9 39 10.101774 39 11.5 L 39 26.277344 A 1.50015 1.50015 0 1 0 42 26.277344 L 42 11.5 C 42 8.4802259 39.519774 6 36.5 6 L 11.5 6 z M 26.435547 13.023438 A 1.50015 1.50015 0 0 0 25 14.5 L 25 28 C 25 30.227598 23.227598 32 21 32 C 18.772402 32 17 30.227598 17 28 C 17 25.772402 18.772402 24 21 24 A 1.50015 1.50015 0 1 0 21 21 C 17.151598 21 14 24.151598 14 28 C 14 31.848402 17.151598 35 21 35 C 24.848402 35 28 31.848402 28 28 L 28 20.335938 C 29.268121 21.316987 30.78243 22 32.5 22 A 1.50015 1.50015 0 1 0 32.5 19 C 29.996501 19 28 17.003499 28 14.5 A 1.50015 1.50015 0 0 0 26.435547 13.023438 z M 7.4765625 15.882812 A 1.50015 1.50015 0 0 0 6 17.404297 L 6 36.5 C 6 39.519774 8.4802259 42 11.5 42 L 36.5 42 C 39.519774 42 42 39.519774 42 36.5 L 42 34.128906 A 1.50015 1.50015 0 1 0 39 34.128906 L 39 36.5 C 39 37.898226 37.898226 39 36.5 39 L 11.5 39 C 10.101774 39 9 37.898226 9 36.5 L 9 17.404297 A 1.50015 1.50015 0 0 0 7.4765625 15.882812 z"></path>
-              </svg>
-            </a>
-            <a class="inline-block text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-500 hover:text-neutral-200 focus:text-neutral-200" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 24 24">
-                <path d="M 17.476562 2.9902344 A 1.0001 1.0001 0 0 0 16.724609 3.3691406 L 12.509766 8.5546875 L 9.0566406 3.7714844 C 8.7066406 3.2874844 8.1458281 3 7.5488281 3 L 4.078125 3 C 3.420125 3 3.0388281 3.7462969 3.4238281 4.2792969 L 9.3339844 12.462891 L 3.7246094 19.369141 A 1.0001 1.0001 0 1 0 5.2753906 20.630859 L 10.548828 14.142578 L 14.943359 20.228516 C 15.293359 20.712516 15.854172 21 16.451172 21 L 19.921875 21 C 20.579875 21 20.961172 20.253703 20.576172 19.720703 L 13.724609 10.232422 L 18.275391 4.6308594 A 1.0001 1.0001 0 0 0 17.476562 2.9902344 z M 6.4101562 5 L 7.4765625 5 L 17.587891 19 L 16.523438 19 L 6.4101562 5 z"></path>
-              </svg>
-            </a>
-            <a class="inline-block text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-500 hover:text-neutral-200 focus:text-neutral-200" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 24 24">
-                <path d="M 12 3 C 9.219873 3 7.0702243 3.1849411 5.5253906 3.3945312 C 3.5192045 3.66666 2 5.3798482 2 7.4101562 L 2 16.589844 C 2 18.620928 3.5195005 20.33338 5.5253906 20.605469 C 7.0706661 20.816142 9.219873 21 12 21 C 14.780127 21 16.929776 20.815059 18.474609 20.605469 C 20.481362 20.333429 22 18.620627 22 16.589844 L 22 7.4101562 C 22 5.3790719 20.4805 3.6666199 18.474609 3.3945312 C 16.929776 3.184941 14.780127 3 12 3 z M 12 4.5 C 14.713873 4.5 16.796271 4.6804497 18.273438 4.8808594 C 19.555547 5.0547709 20.5 6.1212407 20.5 7.4101562 L 20.5 16.589844 C 20.5 17.879061 19.556685 18.945181 18.273438 19.119141 C 16.796271 19.31955 14.713873 19.5 12 19.5 C 9.286127 19.5 7.203287 19.320468 5.7265625 19.119141 C 4.4444527 18.945229 3.5 17.878759 3.5 16.589844 L 3.5 7.4101562 C 3.5 6.1224643 4.4447486 5.0547307 5.7265625 4.8808594 C 7.2037288 4.6804497 9.286127 4.5 12 4.5 z M 10.917969 8.8125 C 10.439 8.8169531 10 9.2012813 10 9.7382812 L 10 14.263672 C 10 14.979672 10.778531 15.423594 11.394531 15.058594 L 15.214844 12.796875 C 15.818844 12.437875 15.818844 11.563078 15.214844 11.205078 L 11.394531 8.9433594 C 11.240531 8.8521094 11.077625 8.8110156 10.917969 8.8125 z"></path>
-              </svg>
-            </a>
-            <a class="inline-block text-gray-500 hover:text-gray-800 focus:outline-none focus:text-gray-800 text-neutral-500 hover:text-neutral-200 focus:text-neutral-200" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 24 24">
-                <path d="M 5.75 3 C 4.2400226 3 3 4.2400226 3 5.75 L 3 18.25 C 3 19.759977 4.2400226 21 5.75 21 L 18.25 21 C 19.759977 21 21 19.759977 21 18.25 L 21 5.75 C 21 4.2400226 19.759977 3 18.25 3 L 5.75 3 z M 5.75 4.5 L 18.25 4.5 C 18.950023 4.5 19.5 5.0499774 19.5 5.75 L 19.5 18.25 C 19.5 18.950023 18.950023 19.5 18.25 19.5 L 5.75 19.5 C 5.0499774 19.5 4.5 18.950023 4.5 18.25 L 4.5 5.75 C 4.5 5.0499774 5.0499774 4.5 5.75 4.5 z M 8.1855469 6.7851562 C 7.4445469 6.7851563 7 7.2293594 7 7.8183594 C 7 8.4113594 7.444375 8.8574219 8.109375 8.8574219 C 8.850375 8.8574219 9.2910156 8.4113594 9.2910156 7.8183594 C 9.2910156 7.2303594 8.8505469 6.7851562 8.1855469 6.7851562 z M 7.0625 9.9628906 L 7.0625 16 L 9.2363281 16 L 9.2363281 9.9628906 L 7.0625 9.9628906 z M 11.033203 9.9628906 L 11.033203 16 L 13.207031 16 L 13.207031 12.697266 C 13.207031 11.718266 13.908141 11.574219 14.119141 11.574219 C 14.330141 11.574219 14.892578 11.785266 14.892578 12.697266 L 14.892578 16 L 17 16 L 17 12.697266 C 17 10.806266 16.154516 9.9628906 15.103516 9.9628906 C 14.052516 9.9628906 13.490031 10.312641 13.207031 10.806641 L 13.207031 9.9628906 L 11.033203 9.9628906 z"></path>
-              </svg>
-            </a>
-          </div>
-          <!-- End Social Brands -->
         </div>
         <!-- End Col -->
       </div>
@@ -2494,4 +2176,13 @@ Market. Furthermore, we share our evaluations with scientists, healthcare provid
   
 <script>
   import 'preline';
+  import MainMenu from '@/components/main-menu/Main.vue'
+  import Banner from '@/components/banner/Main.vue'
+
+  export default {
+  components: {
+    MainMenu,
+    Banner
+  }
+}
 </script>

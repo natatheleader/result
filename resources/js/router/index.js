@@ -9,6 +9,7 @@ import Login from "../views/auth/login.vue";
 import ForgotPass from '../views/auth/forgetPass.vue';
 import Verify from '../views/auth/verify.vue';
 import Landing from '../views/landing/main2.vue';
+import Product from '../views/products/main.vue';
 import Page2 from '../views/page-2/Main.vue';
 import Banner from '../views/banner/main.vue';
 import { useAuthStore } from "../stores/auth";
@@ -18,6 +19,12 @@ const routes = [
     path: "/home",
     name: "landing",
     component: Landing,
+    requiresAuth: false,
+  }, 
+  {
+    path: "/products",
+    name: "products",
+    component: Product,
     requiresAuth: false,
   }, 
   {
